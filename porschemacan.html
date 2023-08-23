@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>PORSCHE Macan</title>
 </head>
 <header>
-    <div class="sandwich">
         
-    </div>
        <div class="menu1">
-        <nav class="smenu">
-            <a href="logo">PORSCHE</a>
-        </nav>
+            <a href="#" class="logo">PORSCHE</a>
+
     </div>
     <div class="img carousel">
         <figure>
@@ -23,37 +21,52 @@
     </div>
 </header>
 <body>
-    <section class="navigation">
-    <nav class="nav-bar"></nav>
-        
-            <a href="about-text">Sobre o Macan</a>
-        
-            <a href="ext360-text">360° Exterior</a>
 
-            <a href="int360">360° Interior</a>
-
-            <a href="detail-text">Detalhes</a>
-
-            <a href="model-text">Modelo e Dados</a>
-
-            <a href="gallery-text">Galeria</a>
-
-            <a href="contact-text">Contato</a>
-
+    <section class="sticky-menu">
+    <nav class="navigation">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#">Sobre o Macan</a></li>
+            <li class="nav-item"><a href="#">360° Exterior</a></li>
+            <li class="nav-item"><a href="#">360° Interior</a></li>
+            <li class="nav-item"><a href="#">Modelo e Dados</a></li>
+            <li class="nav-item"><a href="#">Galeria</a></li>
+            <li class="nav-item"><a href="#">Contato</a></li>
+        </ul>
+    </nav>
         </section>
-        <section>
-            <main>
-                <div class="">
+
+        <section >
+            <main class="about">
+                <div class="img02">
                     <figure>
-                        <img src="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-7.jpg" alt="">
+                        <img src="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-7.jpg" alt="" width="100%" class="img02-img">
                     </figure>
-                    <figure>
-                        <img src="https://primeiramarcha.com.br/wp-content/uploads/2022/05/porschemacan.jpg" alt=""
-                        width="100%">
-                    </figure>
+                </div>
+                    <div class="img02-text">
+                        <h4>O novo Macan</h4>
+                        <p>O novo Macan: Destaque nos aspectos em que os
+                            outros se perdem na multidão. Jovem, dinâmico e
+                            urbano,com equipamentos de série completos,
+                            características de design exclusivas do modelo e,
+                            é claro, o tradicional desempenho Porsche.
+                        </p>
+                        <button>
+                            Conhecer agora
+                        </button>
                 </div>
                 
             </main>
         </section>
+        <section>
+            <div class="parallax-container">
+                <div class="parallax-bg"></div>
+                <div class="parallax-content">
+                    <h1>Porsche Macan</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id obcaecati voluptatem illum blanditiis reiciendis facilis ratione labore similique quidem? Ipsum veniam rerum exercitationem pariatur repellendus aperiam sit tenetur ipsam.</p>
+                </div>
+                
+            </div>
+        </section>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

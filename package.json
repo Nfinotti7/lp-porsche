@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@react-spring/parallax": "^9.7.3",
+    "bootstrap": "^5.3.1",
     "lax.js": "^2.0.3"
   }
 }
