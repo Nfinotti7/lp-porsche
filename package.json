@@ -2,6 +2,8 @@
   "dependencies": {
     "@react-spring/parallax": "^9.7.3",
     "bootstrap": "^5.3.1",
-    "lax.js": "^2.0.3"
+    "jquery": "^3.7.0",
+    "lax.js": "^2.0.3",
+    "lity": "^2.4.1"
   }
 }
