@@ -30,7 +30,7 @@
     <section class="sticky-menu">
       <nav class="navigation">
         <ul class="nav-menu">
-          <li class="nav-item"><a href="#">Sobre o Macan</a></li>
+          <li class="nav-item"><a href="#about">Sobre o Macan</a></li>
           <li class="nav-item"><a href="#">360° Exterior</a></li>
           <li class="nav-item"><a href="#">360° Interior</a></li>
           <li class="nav-item"><a href="#">Modelo e Dados</a></li>
@@ -65,14 +65,20 @@
 
       </main>
     </section>
-    <section>
-      <div class="parallax-container">
-        <div class="parallax-bg"></div>
-        <div class="parallax-content">
-          <h1>Porsche Macan</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id obcaecati voluptatem illum blanditiis
+    <section id="about">
+      <div class="parallax">
+        <div class="parallax__bg">
+          <img src="https://primeiramarcha.com.br/wp-content/uploads/2022/05/porschemacan.jpg" alt="">
+          <div class="parallax__bg--overlay"></div>
+        </div>
+        <div class="container">
+          <div class="parallax__content">
+          <h2 class="parallax__content--title">Porsche Macan</h2>
+          <p class="parallax__content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id obcaecati voluptatem illum
+            blanditiis
             reiciendis facilis ratione labore similique quidem? Ipsum veniam rerum exercitationem pariatur repellendus
             aperiam sit tenetur ipsam.</p>
+          </div>
         </div>
 
       </div>
@@ -80,6 +86,8 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/lity/dist/lity.js"></script>
+    <script src="node_modules/lax.js/lib/lax.min.js"></script>
+    <script src="public/js/script.js" type="module"></script>
   </body>
 
 </html>
