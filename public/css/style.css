@@ -14,12 +14,11 @@
 }
 
 html {
-
   scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(8, 8, 8);
+  color: rgb(46, 120, 185);
 
 }
 
@@ -99,35 +98,30 @@ body {
 .about .about-text p {
   max-width: 70ch;
 }
-.about-01{
+
+.parallax-container {
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
-.about-01 .abt-img{
-  width: 100%;
-  filter: brightness(40%);
-}
-.about-01 h1{
+
+.parallax-bg {
   position: absolute;
-  color: white;
-  justify-content: center;
-  max-width: 50ch;
-  font-size: 50px;
-  left: 5rem;
-  bottom: 10rem;
-}
-.about-02{
-  position:relative;
-}
-.about-02 .abt-img2{
+  top: 0;
+  left: 0;
   width: 100%;
-  filter: brightness(40%);
+  height: 100%;
+  background-image: url("https://primeiramarcha.com.br/wp-content/uploads/2022/05/porschemacan.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0);
 }
-.about-02 h1{
+
+.parallax-content {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
-  justify-content: center;
-  max-width: 50ch;
-  font-size: 50px;
-  left: 5rem;
-  bottom: 5rem;
 }
