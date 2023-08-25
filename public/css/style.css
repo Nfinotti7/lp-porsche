@@ -51,7 +51,7 @@ header img {
   top: 0px;
   background-color: #fff;
   width: 100%;
-  height: 60px;
+  height: 100%;
   margin-top: 0;
   box-sizing: border-box;
   box-shadow: 3px 4px 6px 0px #6b6969;
@@ -59,19 +59,22 @@ header img {
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  overflow: hidden;
 }
 
 .navigation ul {
   margin: 0;
+  padding: 15px 20px;
   display: flex;
   column-gap: 15px;
   row-gap: 10px;
+  overflow-x: auto;
+
 }
 .navigation ul li {
   list-style: none;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .navigation ul li a {
