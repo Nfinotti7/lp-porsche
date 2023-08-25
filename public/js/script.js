@@ -6,13 +6,15 @@ window.onload = function () {
     return window.scrollY;
   });
 
+  const parallaxHeight = $(".parallax").height().toFixed() / 2;
+
   lax.addElements(
     ".parallax__bg--overlay", // Element selector rule
     {
       // Animation data
       scrollY: {
         opacity: [
-          ["elInY", "elOutY"],
+          [`elInY+${parallaxHeight}`, "elOutY"],
           [0, 0.8],
         ],
       },
