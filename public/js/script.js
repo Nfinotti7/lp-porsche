@@ -12,10 +12,7 @@ window.onload = function () {
       // Animation data
       scrollY: {
         opacity: [
-          [
-            $(".parallax").offset().top,
-            $(".parallax").offset().top + $(".parallax").height() - 200,
-          ],
+          ["elInY", "elOutY"],
           [0, 0.8],
         ],
       },
@@ -28,10 +25,7 @@ window.onload = function () {
       // Animation data
       scrollY: {
         scale: [
-          [
-            $(".parallax").offset().top,
-            $(".parallax").offset().top + $(".parallax").height(),
-          ],
+          ["elInY", "elOutY"],
           [1, 1.05],
         ],
       },
@@ -44,12 +38,7 @@ window.onload = function () {
       // Animation data
       scrollY: {
         opacity: [
-          [
-            $(".parallax").offset().top,
-            $(".parallax").offset().top +
-              $(".parallax__content").height() +
-              $(".parallax__content--title").height() * 2,
-          ],
+          ["elInY", "elOutY"],
           [0, 1],
         ],
       },

@@ -6,11 +6,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', 'Playfair', sans-serif;
+  font-family: 'Inter', sans-serif;
   list-style: none;
   text-decoration: none;
-  color: black;
-
+  color: #333;
 }
 
 html {
@@ -19,26 +18,31 @@ html {
 
 body {
   color: rgb(46, 120, 185);
-  margin-bottom: 100vh;
-
 }
 
-.menu1 {
+figure {
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
   background: rgb(244, 244, 244);
   width: 100%;
   height: 50px;
+  display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 2px;
 }
 
-.menu1 a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: black;
+header svg,
+header img {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
 }
 
 .sticky-menu {
@@ -55,21 +59,26 @@ body {
 }
 
 .navigation {
+  display: flex;
   align-items: center;
 }
 
+.navigation ul {
+  margin: 0;
+  display: flex;
+  column-gap: 15px;
+  row-gap: 10px;
+}
 .navigation ul li {
   list-style: none;
   display: inline-block;
-
 }
 
 .navigation ul li a {
   text-align: justify;
   text-decoration: none;
-  color: black;
-  font-size: 25px;
-  padding: 10px 10px;
+  color: #333;
+  font-size: 18px;
   transition: all 0.5s;
 }
 
