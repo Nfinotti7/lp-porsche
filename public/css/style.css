@@ -81,7 +81,8 @@ header img {
   text-align: justify;
   text-decoration: none;
   color: #333;
-  font-size: 18px;
+  font-size: 20px;
+  padding: 5px 25px;
   transition: all 0.5s;
 }
 
@@ -108,7 +109,26 @@ header img {
   font-size: 12px;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+.col-12.col-lg-4{
+  margin-top: 5rem;
+}
+.col-12.col-lg-4 button{
+font-size: 18px;
+padding: 10px 25px;
+border-width: 1px;
+transition: all 0.5s;
+}
+.col-12.col-lg-4 button svg > *{
+  transition: all 0.5s;
+}
+.col-12.col-lg-4 button:hover,
+.col-12.col-lg-4 button:hover svg > *{
+  color: red!important;
+}
+.col-12.col-lg-4 button svg{
+  width: 25px;
 }
 
 .about .img02-text p {
@@ -188,4 +208,62 @@ header img {
 }
 .collum2{
   font-weight: bold;
+}
+
+.itn-serie{
+  margin-top: 3rem;
+}
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+  color:black;
+  background:white;
+}
+.formulario{
+  background-color: #f6f6f6;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+form .form-control{
+  border-radius: 0px;
+  background: #ededed;
+  border-bottom: 1px solid red;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.btn-msg{
+  width: 100%;
+  background-color: rgb(212, 60, 60);
+  border: 0px;
+  padding: 15px;
+  color: #fff;
+  transition: all 0.5s;
+}
+.btn-msg:hover{
+  filter: brightness(0.8);
+}
+.formulario p{
+  padding: 10px;
+  margin-bottom: 0;
+}
+.btn-wpp{
+  width: 100%;
+  background-color: rgb(43, 168, 51);
+  border: 0px;
+  padding: 15px;
+  color: #fff;
+  transition: all 0.5s;
+}
+.btn-wpp:hover{
+  filter: brightness(0.8);
+}
+footer{
+  background-color: #333;
+  width: 100%;
+  height: 200px;
 }

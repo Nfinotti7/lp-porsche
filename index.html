@@ -1,432 +1,634 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PORSCHE Macan</title>
+  <title>PORSCHE Macan</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/lity/dist/lity.min.css">
-    <link rel="stylesheet" href="public/css/style.css">
-  </head>
-  <header>
-    <div>
-      <a href="#banner" class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4500 300"><title>Porsche</title><path d="M502 221c48.1 0 74-25.9 74-74V74c0-48.1-25.9-74-74-74H0v300h68v-79h434zm6-143v65c0 7.8-4.2 12-12 12H68V66h428c7.8 0 12 4.2 12 12zm228 222c-48.1 0-74-25.9-74-74V74c0-48.1 25.9-74 74-74h417c48.1 0 74 25.9 74 74v152c0 48.1-25.9 74-74 74H736zm411-66c7.8 0 12-4.2 12-12V78c0-7.8-4.2-12-12-12H742c-7.8 0-12 4.2-12 12v144c0 7.8 4.2 12 12 12h405zm675-36c39.844 16.757 67.853 56.1 68 102h-68c0-54-25-79-79-79h-361v79h-68V0h502c48.1 0 74 25.9 74 74v50.14c0 46.06-23.75 71.76-68 73.86zm-12-43c7.8 0 12-4.2 12-12V78c0-7.8-4.2-12-12-12h-428v89h428zm162-81c0-48.1 25.9-74 74-74h492v56h-486c-7.8 0-12 4.2-12 12v42c0 7.8 4.2 12 12 12h422c48.1 0 74 25.9 74 74v30c0 48.1-25.9 74-74 74h-492v-56h486c7.8 0 12-4.2 12-12v-42c0-7.8-4.2-12-12-12h-422c-48.1 0-74-25.9-74-74V74zm661 0c0-48.1 25.9-74 74-74h480v66h-474c-7.8 0-12 4.2-12 12v144c0 7.8 4.2 12 12 12h474v66h-480c-48.1 0-74-25.9-74-74V74zM3817 0v300h-68V183h-407v117h-68V0h68v117h407V0h68zm156 56v66h527v56h-527v66h527v56h-595V0h595v56h-527z"></path></svg>
-      </a>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/lity/dist/lity.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<header>
+  <div>
+    <a href="#banner" class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4500 300">
+        <title>Porsche</title>
+        <path
+          d="M502 221c48.1 0 74-25.9 74-74V74c0-48.1-25.9-74-74-74H0v300h68v-79h434zm6-143v65c0 7.8-4.2 12-12 12H68V66h428c7.8 0 12 4.2 12 12zm228 222c-48.1 0-74-25.9-74-74V74c0-48.1 25.9-74 74-74h417c48.1 0 74 25.9 74 74v152c0 48.1-25.9 74-74 74H736zm411-66c7.8 0 12-4.2 12-12V78c0-7.8-4.2-12-12-12H742c-7.8 0-12 4.2-12 12v144c0 7.8 4.2 12 12 12h405zm675-36c39.844 16.757 67.853 56.1 68 102h-68c0-54-25-79-79-79h-361v79h-68V0h502c48.1 0 74 25.9 74 74v50.14c0 46.06-23.75 71.76-68 73.86zm-12-43c7.8 0 12-4.2 12-12V78c0-7.8-4.2-12-12-12h-428v89h428zm162-81c0-48.1 25.9-74 74-74h492v56h-486c-7.8 0-12 4.2-12 12v42c0 7.8 4.2 12 12 12h422c48.1 0 74 25.9 74 74v30c0 48.1-25.9 74-74 74h-492v-56h486c7.8 0 12-4.2 12-12v-42c0-7.8-4.2-12-12-12h-422c-48.1 0-74-25.9-74-74V74zm661 0c0-48.1 25.9-74 74-74h480v66h-474c-7.8 0-12 4.2-12 12v144c0 7.8 4.2 12 12 12h474v66h-480c-48.1 0-74-25.9-74-74V74zM3817 0v300h-68V183h-407v117h-68V0h68v117h407V0h68zm156 56v66h527v56h-527v66h527v56h-595V0h595v56h-527z">
+        </path>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<body>
+  <section id="banner">
+    <div class="">
+      <figure>
+        <img src="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-4.jpg" alt="" width="100%"
+          height="100%">
+      </figure>
     </div>
-  </header>
+  </section>
 
-  <body>
-    <section id="banner">
-      <div class="img carousel">
-        <figure>
-          <img src="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-4.jpg" alt="" width="100%"
-            height="100%">
-        </figure>
-      </div>
-    </section>
+  <section class="sticky-menu">
+    <nav class="navigation">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#about">Sobre o Macan</a></li>
+        <li class="nav-item"><a href="#">360° Exterior</a></li>
+        <li class="nav-item"><a href="#">360° Interior</a></li>
+        <li class="nav-item"><a href="#">Modelo e Dados</a></li>
+        <li class="nav-item"><a href="#">Galeria</a></li>
+        <li class="nav-item"><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </section>
 
-    <section class="sticky-menu">
-      <nav class="navigation">
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="#about">Sobre o Macan</a></li>
-          <li class="nav-item"><a href="#">360° Exterior</a></li>
-          <li class="nav-item"><a href="#">360° Interior</a></li>
-          <li class="nav-item"><a href="#">Modelo e Dados</a></li>
-          <li class="nav-item"><a href="#">Galeria</a></li>
-          <li class="nav-item"><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </section>
-
-    <section id="about">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-lg-8 px-0">
-            <div class="img02">
-              <figure>
-                <a href="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-7.jpg" data-lity>
-                  <img src="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-7.jpg" alt="" width="100%" class="img02-img">
-                </a>
-              </figure>
-            </div>
+  <section id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-8 px-0">
+          <div class="img02">
+            <figure>
+              <a href="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-7.jpg" data-lity>
+                <img src="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-7.jpg" alt=""
+                  width="100%" class="img02-img">
+              </a>
+            </figure>
           </div>
-          <div class="col-12 col-lg-4">
-            <div class="img02-text">
-              <h4>O novo Macan</h4>
-              <p>O novo Macan: Destaque nos aspectos em que os
-                outros se perdem na multidão. Jovem, dinâmico e
-                urbano,com equipamentos de série completos,
-                características de design exclusivas do modelo e,
-                é claro, o tradicional desempenho Porsche.
-              </p>
-              <button>
-                Conhecer agora
-              </button>
-            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="img02-text">
+            <h4>O novo Macan</h4>
+            <p>O novo Macan: Destaque nos aspectos em que os
+              outros se perdem na multidão. Jovem, dinâmico e
+              urbano,com equipamentos de série completos,
+              características de design exclusivas do modelo e,
+              é claro, o tradicional desempenho Porsche.
+            </p>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+              
+              Conhecer agora
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
+  <section>
     <div id="about-01">
       <div class="parallax">
         <div class="parallax__bg">
           <figure>
-          <img src="https://www.planetcarsz.com/img/carros/2021/10/porsche-macan-s-2022-022-20211030171538-1280x925.jpg" alt="">
+            <img
+              src="https://www.planetcarsz.com/img/carros/2021/10/porsche-macan-s-2022-022-20211030171538-1280x925.jpg"
+              alt="">
           </figure>
           <div class="parallax__bg--overlay"></div>
         </div>
         <div class="container">
           <div class="parallax__content">
-          <h2 class="parallax__content--title">Repaginada: a parte dianteira com a marcante asa.</h2>
-          <p class="parallax__content--text"></p>
+            <h2 class="parallax__content--title">Repaginada: a parte dianteira com a marcante asa.</h2>
+            <p class="parallax__content--text"></p>
           </div>
         </div>
       </div>
 
       <div id="about-02">
-      <div class="parallax">
-        <div class="parallax__bg">
-          <figure>
-          <img src="https://cdn.carbuzz.com/gallery-images/2022-porsche-macan-side-view-carbuzz-889140-1600.jpg" alt="">
-          </figure>
-          <div class="parallax__bg--overlay"></div>
-        </div>
-        <div class="container">
-          <div class="parallax__content">
-          <h2 class="parallax__content--title">Os side blades típicos do Macan em novo design</h2>
-          <p class="parallax__content--text"></p>
-          </div>
-        </div>
-
-      </div>
-      <div id="about-03">
-      <div class="parallax">
-        <div class="parallax__bg">
-          <figure>
-          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqPwTTzSaHriLV5U_jWFJnZS3CUMwtbtJ1FAOD2Jcgwgi9LLB2tEBRbZK-TD0NUgkKd7cdFz0F1iLqS6s5jQtffO6puKRLLldbu-LHL4RSvSm2bSrv8yM_NyERAj9-lxDR07Gqqr3uyNRz4AC8qD0pHIj5dLkc5eGPYX0xoq6bv10po5ccjZP4GFun/s1920/porsche-macan-2022-brasil%20(20).jpg" alt="">
-          </figure>
-          <div class="parallax__bg--overlay"></div>
-        </div>
-        <div class="container">
-          <div class="parallax__content">
-          <h2 class="parallax__content--title">A parte traseira repaginada com área preta do difusor</h2>
-          <p class="parallax__content--text"></p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section id="ext360">
-      <div class="ext360-01">
-        <iframe src="" frameborder="0"> </iframe>
-      </div>
-      <div class="ext360-02">
         <div class="parallax">
           <div class="parallax__bg">
             <figure>
-            <img src="https://1.bp.blogspot.com/-joZOPgeCH3Y/YPaSKOQrZ7I/AAAAAAAA0CI/L-i4BnjREfcnm9EnGkiFh4QtmlrtMLNnQCLcBGAsYHQ/s2048/Porsche-Macan-2022%2B%25288%2529.jpg" alt="">
+              <img src="https://cdn.carbuzz.com/gallery-images/2022-porsche-macan-side-view-carbuzz-889140-1600.jpg"
+                alt="">
             </figure>
             <div class="parallax__bg--overlay"></div>
           </div>
           <div class="container">
             <div class="parallax__content">
+              <h2 class="parallax__content--title">Os side blades típicos do Macan em novo design</h2>
+              <p class="parallax__content--text"></p>
+            </div>
+          </div>
+
+        </div>
+        <div id="about-03">
+          <div class="parallax">
+            <div class="parallax__bg">
+              <figure>
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqPwTTzSaHriLV5U_jWFJnZS3CUMwtbtJ1FAOD2Jcgwgi9LLB2tEBRbZK-TD0NUgkKd7cdFz0F1iLqS6s5jQtffO6puKRLLldbu-LHL4RSvSm2bSrv8yM_NyERAj9-lxDR07Gqqr3uyNRz4AC8qD0pHIj5dLkc5eGPYX0xoq6bv10po5ccjZP4GFun/s1920/porsche-macan-2022-brasil%20(20).jpg"
+                  alt="">
+              </figure>
+              <div class="parallax__bg--overlay"></div>
+            </div>
+            <div class="container">
+              <div class="parallax__content">
+                <h2 class="parallax__content--title">A parte traseira repaginada com área preta do difusor</h2>
+                <p class="parallax__content--text"></p>
+              </div>
+            </div>
+
+          </div>
+  </section>
+  <section id="ext360">
+    <div class="ext360-01">
+      <iframe src="" frameborder="0"> </iframe>
+    </div>
+    <div class="ext360-02">
+      <div class="parallax">
+        <div class="parallax__bg">
+          <figure>
+            <img
+              src="https://1.bp.blogspot.com/-joZOPgeCH3Y/YPaSKOQrZ7I/AAAAAAAA0CI/L-i4BnjREfcnm9EnGkiFh4QtmlrtMLNnQCLcBGAsYHQ/s2048/Porsche-Macan-2022%2B%25288%2529.jpg"
+              alt="">
+          </figure>
+          <div class="parallax__bg--overlay"></div>
+        </div>
+        <div class="container">
+          <div class="parallax__content">
             <h2 class="parallax__content--title-ext360-02">Graças ao touchscreen com painéis de
               vidro,o Advanced Cockpit confere um
               conceito de uso extremamente moderno e, ao mesmo tempo, tipicamente Porsche.
             </h2>
-      </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="ext360-03">
-        <div class="parallax">
-          <div class="parallax__bg">
-            <figure>
-            <img src="https://immagini.alvolante.it/sites/default/files/styles/image_gallery_big/public/primo_contatto_galleria/2022/03/porsche-macan-gts-2022-03_11.jpg?itok=xod5C1OY" alt="">
-            </figure>
-            <div class="parallax__bg--overlay"></div>
-          </div>
-          <div class="container">
-            <div class="parallax__content">
-            <h2 class="parallax__content--title-ext360-02">Nova geração de volantes: o volante esportivo multifuncional e o volante esportivo GT, respectivamente, dão uma sensação tátil esportiva, e permitem troca de marcha manual através dos paddles de mudança.</h2>
+    <div class="ext360-03">
+      <div class="parallax">
+        <div class="parallax__bg">
+          <figure>
+            <img
+              src="https://immagini.alvolante.it/sites/default/files/styles/image_gallery_big/public/primo_contatto_galleria/2022/03/porsche-macan-gts-2022-03_11.jpg?itok=xod5C1OY"
+              alt="">
+          </figure>
+          <div class="parallax__bg--overlay"></div>
+        </div>
+        <div class="container">
+          <div class="parallax__content">
+            <h2 class="parallax__content--title-ext360-02">Nova geração de volantes: o volante esportivo multifuncional
+              e o volante esportivo GT, respectivamente, dão uma sensação tátil esportiva, e permitem troca de marcha
+              manual através dos paddles de mudança.</h2>
             <p class="parallax__content--text"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="int360">
+    <div class="int360">
+      <iframe src="" frameborder="0"></iframe>
+    </div>
+
+  </section>
+
+  <section id="model">
+    <div class="model-img">
+      <figure>
+        <img src="" alt="">
+      </figure>
+    </div>
+    <h2>Dados técnicos</h2>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseOne">
+            Motor
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+
+            <div class="table-responsive">
+              <table class="table">
+
+                <tbody>
+                  <tr class="">
+                    <td scope="row">Número de cilindros</td>
+                    <td class="collum2">4</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Diâmetro</td>
+                    <td class="collum2">82,5 mm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Curso</td>
+                    <td class="collum2">92,8 mm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Cilindrada</td>
+                    <td class="collum2">1.984 cm³</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Potência (kW)</td>
+                    <td class="collum2">195 kW</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Potência (cv)</td>
+                    <td class="collum2">265cv</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Rotação máxima do motor</td>
+                    <td class="collum2">6.800 1/min</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Torque máximo</td>
+                    <td class="collum2">400 Nm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Máxima potência por litro (kW/l)</td>
+                    <td class="collum2">98,00 kW/l</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Máxima potência por litro (cv/l)</td>
+                    <td class="collum2">133,00 cv/l</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo">
+            Performance
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr class="">
+                    <td scope="row">Velocidade máxima</td>
+                    <td class="collum2">232 km/h</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Aceleração 0 - 100km/h</td>
+                    <td class="collum2">6,4 s</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Aceleração 0 - 100 km/h com pacote Sport Chrono</td>
+                    <td class="collum2">6,2 s</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Aceleração 0 - 160km/h</td>
+                    <td class="collum2">16,3 s</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Aceleração 0 - 160km/h com Pacote Sport Chrono</td>
+                    <td class="collum2">16,1 s</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Aceleração em marcha (80 - 120 km/h)</td>
+                    <td class="collum2">4,5 s</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree">
+            Características de terreno
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr class="">
+                    <td scope="row">Dintância máxima entre oslo e componentes sensíveis à água (suspenção de aço)</td>
+                    <td class="collum2">300mm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Ângulo de saída - suspensão de aço</td>
+                    <td class="collum2">16,7°</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Máxima distância livre do solo - suspenção de aço</td>
+                    <td class="collum2">202 mm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Máxima distância livre do solo - suspenção a ar (altura em nível Normal)</td>
+                    <td class="collum2">187 mm</td>
+                  </tr>
+
+                </tbody>
+              </table>
             </div>
           </div>
-  
         </div>
       </div>
-    </section>
-    
-    <section id="int360">
-        <div class="int360">
-          <iframe src="" frameborder="0"></iframe>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFour">
+            Carroceria
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr class="">
+                    <td scope="row">Comprimento</td>
+                    <td class="collum2">4.726 mm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Largura</td>
+                    <td class="collum2">1.922 mm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Largura (com retrovisore)</td>
+                    <td class="collum2">2.097mm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Altura</td>
+                    <td class="collum2">1.621 mm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Entre-eixos</td>
+                    <td class="collum2">2.807 mm</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Diâmetro de viragem</td>
+                    <td class="collum2">12,0 m</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Peso (DIN)</td>
+                    <td class="collum2">1.845 kg</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Peso (EU)</td>
+                    <td class="collum2">1920 kg</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Peso bruto permitido</td>
+                    <td class="collum2">2.510 kg</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Carga máxima</td>
+                    <td class="collum2">665 kg</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Máxima carga de reboque (travado)</td>
+                    <td class="collum2">2000 kg</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Máxima carga de reboque (destravado)</td>
+                    <td class="collum2">750 kg</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Carga máxima admissível no teto com o sistema de transporte Porsche</td>
+                    <td class="collum2">75 kg</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-
-    </section>
-
-    <section id="model">
-      <div class="model-img">
-        <figure>
-          <img src="" alt="">
-        </figure>
       </div>
-      <h2>Dados técnicos</h2>
-      <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFive">
+            Capacidades
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr class="">
+                    <td scope="row">Volume do bagageiro aberto (atrás dos bancos dianteiros)</td>
+                    <td class="collum2">954 l</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Volume do bagageiro aberto ( até ao contorno superior dos bancos traseiros)</td>
+                    <td class="collum2">488 l</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Maior volume do bagageiro (atrás dos bancos dianteiros, até o teto)</td>
+                    <td class="collum2">1.503 l</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Tanque de combustível</td>
+                    <td class="collum2">75 l</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="itn-serie">Itens de série</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Powertrain, chassis e desempenho
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table">
+
+                <tbody>
+                  <tr class="">
+                    <td scope="row">Freio de estacionamento acionado eletricamente e função Hold automática</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Sistema de freio antitravamento (ABS), sistema de estabilidade do veículo Porsche
+                      Stability Management (PSM) com ABS, ASR, ABD, MSR e gestão da estabilidade do reboque e Porsche
+                      Hill Control (PHC)</td>
+                  </tr>
+                  <tr>
+                    <td>Porsche Traction Management (PTM): tração ativa nas quatro rodas com embreagem multidisco
+                      eletronicamente variável, controlada por mapa, diferencial de freio automático (ABD) e regulação
+                      antiderrapante (ASR), com função Auto Start-Stop até 3 km/h
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Botão Off-road</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            Design exterior
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Carroceria totalmente galvanizada, monobloco, com quatro portas com proteção lateral integrada,
+                      para-choques compostos por travessas de alta resistência
+                      e dois elementos de deformação, cada um com dois pontos de fixação roscados para olhal de reboque
+                      contido
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-              Motor
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+              aria-expanded="true" aria-controls="collapseThree">
+              Luzes & visibilidade
             </button>
           </h2>
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              
               <div class="table-responsive">
-                <table class="table table-primary">
-                
+                <table class="table">
                   <tbody>
-                    <tr class="">
-                      <td scope="row">Número de cilindros</td>
-                      <td class="collum2">4</td>
+
+                    <tr>
+                      <td>Ativação automática dos faróis incl. Iluminação "Welcome Home"</td>
                     </tr>
-                    <tr class="">
-                      <td scope="row">Diâmetro</td>
-                      <td class="collum2">82,5 mm</td>
+                    <tr>
+                      <td>Sistema de limpa-vidros dianteiro com 2 velocidades, limpeza intermitente e sensor de chuva,
+                        limpador de vidro traseiro
+                        com limpeza intermitente e jato de lavagem</td>
                     </tr>
-                    <tr class="">
-                      <td scope="row">Curso</td>
-                      <td class="collum2">92,8 mm</td>
-                    </tr>
-                    <tr class="">
-                      <td scope="row">Cilindrada</td>
-                      <td class="collum2">1.984 cm³</td>
-                    </tr>
-                    <tr class="">
-                      <td scope="row">Potência (kW)</td>
-                      <td class="collum2">195 kW</td>
-                    </tr>
-                    <tr class="">
-                      <td scope="row">Potência (cv)</td>
-                      <td class="collum2">265cv</td>
-                    </tr>
-                    <tr class="">
-                      <td scope="row">Rotação máxima do motor</td>
-                      <td class="collum2">6.800 1/min</td>
-                    </tr>
-                    <tr class="">
-                      <td scope="row">Torque máximo</td>
-                      <td class="collum2">400 Nm</td>
-                    </tr>
-                    <tr class="">
-                      <td scope="row">Máxima potência por litro (kW/l)</td>
-                      <td class="collum2">98,00 kW/l</td>
-                    </tr>
-                    <tr class="">
-                      <td scope="row">Máxima potência por litro (cv/l)</td>
-                      <td class="collum2">133,00 cv/l</td>
+                    <tr>
+                      <td>Conceito de iluminação interior: porta-luvas, ignição, focos de leitura para condutor e
+                        passageiro da frente,
+                        luzes de leitura traseiras esquerda e direita, bagageiro</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              
-        
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-              Performance
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              <div class="table-responsive">
-                <table class="table table-primary">
-                  <tbody>
-                    <tr class="">
-                      <td scope="row">Velocidade máxima</td>
-                      <td class="collum2">232 km/h</td>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                aria-expanded="true" aria-controls="collapseFour">
+                Design interior
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Porta-garrafas nos painéis das portas dianteiras e traseiras,dois porta-copos de diâmetro
+                          variável na frente, gancho para roupas em ambos os pilares B,
+                          cobertura fixa e removível do porta-malas
+                        </td>
                       </tr>
-                    <tr class="">
-                      <td scope="row">Aceleração 0 - 100km/h</td>
-                      <td class="collum2">6,4 s</td>
-                      </tr>
-                      <tr class="">
-                      <td scope="row">Aceleração 0 - 100 km/h com pacote Sport Chrono</td>
-                      <td class="collum2">6,2 s</td>
-                      </tr>
-                      <tr class="">
-                      <td scope="row">Aceleração 0 - 160km/h</td>
-                      <td class="collum2">16,3 s</td>
-                      </tr>
-                      <tr class="">
-                      <td scope="row">Aceleração 0 - 160km/h com Pacote Sport Chrono</td>
-                      <td class="collum2">16,1 s</td>
-                      </tr>
-                      <tr class="">
-                      <td scope="row">Aceleração em marcha (80 - 120 km/h)</td>
-                      <td class="collum2">4,5 s</td>
-                      </tr>
-                      
-                  </tbody>
-                </table>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-              Características de terreno
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              <div class="table-responsive">
-                <table class="table table-primary">
-                  <tbody>
-                    <tr class="">
-                      <td scope="row">Dintância máxima entre oslo e componentes sensíveis à água (suspenção de aço)</td>
-                      <td class="collum2">300mm</td>
-                      </tr>
-                      <tr class="">
-                        <td scope="row">Ângulo de saída - suspensão de aço</td>
-                        <td class="collum2">16,7°</td>
-                        </tr>
-                        <tr class="">
-                          <td scope="row">Máxima distância livre do solo - suspenção de aço</td>
-                          <td class="collum2">202 mm</td>
-                          </tr>
-                          <tr class="">
-                            <td scope="row">Máxima distância livre do solo - suspenção a ar (altura em nível Normal)</td>
-                            <td class="collum2">187 mm</td>
-                            </tr>
-                            
-                  </tbody>
-                </table>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-              Carroceria
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              <div class="table-responsive">
-                <table class="table table-primary">
-                  <tbody>
-                    <tr class="">
-                      <td scope="row">Comprimento</td>
-                      <td class="collum2">4.726 mm</td>
-                      </tr>
-                      <tr class="">
-                        <td scope="row">Largura</td>
-                        <td class="collum2">1.922 mm</td>
-                        </tr>
-                        <tr class="">
-                          <td scope="row">Largura (com retrovisore)</td>
-                          <td class="collum2">2.097mm</td>
-                          </tr>
-                          <tr class="">
-                            <td scope="row">Altura</td>
-                            <td class="collum2">1.621 mm</td>
-                            </tr>
-                            <tr class="">
-                              <td scope="row">Entre-eixos</td>
-                              <td class="collum2">2.807 mm</td>
-                              </tr>
-                              <tr class="">
-                                <td scope="row">Diâmetro de viragem</td>
-                                <td class="collum2">12,0 m</td>
-                                </tr>
-                                <tr class="">
-                                  <td scope="row">Peso (DIN)</td>
-                                  <td class="collum2">1.845 kg</td>
-                                  </tr>
-                                  <tr class="">
-                                    <td scope="row">Peso (EU)</td>
-                                    <td class="collum2">1920 kg</td>
-                                    </tr>
-                                    <tr class="">
-                                      <td scope="row">Peso bruto permitido</td>
-                                      <td class="collum2">2.510 kg</td>
-                                      </tr>
-                                      <tr class="">
-                                        <td scope="row">Carga máxima</td>
-                                        <td class="collum2">665 kg</td>
-                                        </tr>
-                                        <tr class="">
-                                          <td scope="row">Máxima carga de reboque (travado)</td>
-                                          <td class="collum2">2000 kg</td>
-                                          </tr>
-                                          <tr class="">
-                                            <td scope="row">Máxima carga de reboque (destravado)</td>
-                                            <td class="collum2">750 kg</td>
-                                            </tr>
-                                            <tr class="">
-                                              <td scope="row">Carga máxima admissível no teto com o sistema de transporte Porsche</td>
-                                              <td class="collum2">75 kg</td>
-                                              </tr>
-                  </tbody>
-                </table>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-              Capacidades
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              <div class="table-responsive">
-                <table class="table table-primary">
-                  <tbody>
-                    <tr class="">
-                      <td scope="row">Volume do bagageiro aberto (atrás dos bancos dianteiros)</td>
-                      <td class="collum2">954 l</td>
-                      </tr>
-                      <tr class="">
-                        <td scope="row">Volume do bagageiro aberto ( até ao contorno superior dos bancos traseiros)</td>
-                        <td class="collum2">488 l</td>
-                        </tr>
-                        <tr class="">
-                          <td scope="row">Maior volume do bagageiro (atrás dos bancos dianteiros, até o teto)</td>
-                          <td class="collum2">1.503 l</td>
-                          </tr>
-                          <tr class="">
-                            <td scope="row">Tanque de combustível</td>
-                            <td class="collum2">75 l</td>
-                            </tr>
-                  </tbody>
-                </table>
-    </section>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="node_modules/lity/dist/lity.js"></script>
-    <script src="node_modules/lax.js/lib/lax.min.js"></script>
-    <script src="public/js/script.js" type="module"></script>
-  </body>
+                      <tr>
+                        <td>Cluster integrado de três instrumentos redondos, painel de instrumentos com display colorido
+                          de alta resolução de 4,8 polegadas,
+                          indicador de marcha para PDK, display de intervalo de serviço, indicador de temperatura
+                          externa e medidor de combustível
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+  </section>
+  <section class="contact">
+    <div class="container">
+      <div class="formulario">
+        <h4>GOSTOU DESSE PORSCHE MACAN?</h4>
+        <p>ENTRE EM CONTATO COM A LOJA!</p>
+        <form action="POST" method="enviar.php">
+          <div class="mb-3">
+            <input type="email" placeholder="* Nome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <input type="email" placeholder="* Celular" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <input type="email" placeholder="Email (opcional)" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <textarea name="" id="" rows="5" placeholder="* Mensagem" class="form-control"></textarea>
+          </div>
+        </form>
+        <button type="button" class="btn-msg">ENVIAR MENSAGEM</button>
+        <p>OU SE PREFERIR</p>
+      <button type="button" class="btn-wpp">INICIAR CONVERSA POR WHATSAPP</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+
+    </div>
+  </footer>
+
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/lity/dist/lity.js"></script>
+  <script src="node_modules/lax.js/lib/lax.min.js"></script>
+  <script src="public/js/script.js" type="module"></script>
+</body>
 
 </html>
