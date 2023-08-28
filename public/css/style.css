@@ -45,13 +45,13 @@ header img {
   width: auto;
   object-fit: contain;
 }
-#banner img{
+.banner01{
   position: relative;
-  display: inline-block;
+  width: 100%;
 }
 .btn-banner{
-  position: absolute;
-  top: 9%;
+  position:absolute;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -60,7 +60,6 @@ header img {
   border: 2px solid white;
   padding: 20px 40px;
   font-size: 16px;
-  cursor: pointer;
   z-index: 1;
   backdrop-filter: blur( 5px);
 }
