@@ -74,7 +74,7 @@ header img {
   margin-top: 0;
   box-sizing: border-box;
   box-shadow: 3px 4px 6px 0px #6b6969;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navigation {
@@ -298,6 +298,8 @@ footer{
 }
 #tecnicos.active {
   animation: slideUp 1s ease forwards;
+  z-index: 2;
+  
 }
 
 @keyframes slideUp {
