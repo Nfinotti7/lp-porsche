@@ -47,3 +47,12 @@ window.onload = function () {
     }
   );
 };
+
+$("#btn-banner").on("click", () => {
+
+  $("#tecnicos").addClass("active").css("display", "block");
+});
+
+$("#btn-bannerClose").on("click", () => {
+  $("#tecnicos").removeClass("active");
+});
