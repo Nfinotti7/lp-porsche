@@ -244,33 +244,41 @@ header img {
   font-weight: bold;
 }
 /* end::PARALLAX */
+.gallery .container{
+  padding: 10px;
+  max-width: 1100px;
+  max-height: 700px;
+  margin: 0 auto;
+  background: #f3f3f3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+}
+
+.v-stretch{
+  grid-row: span 2;
+}
+
+.h-stretch{
+  grid-column: span 2;
+}
+
+big-stretch{
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.gallery div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 #model h2{
   font-weight: bold;
 }
-.accordion-button{
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
-}
-.accordion-body{
-  background-color: #fff;
-}
-.collum2{
-  font-weight: bold;
-}
 
-.itn-serie{
-  margin-top: 3rem;
-}
-.accordion-button:focus{
-  box-shadow: none;
-}
-
-.accordion-button:not(.collapsed){
-  color:black;
-  background:white;
-}
 .formulario{
   background-color: #f6f6f6;
   max-width: 500px;
@@ -312,18 +320,73 @@ form .form-control{
 .btn-wpp:hover{
   filter: brightness(0.8);
 }
+/* end :: contact */
+
+/* begin :: footer */
+
 footer{
   background-color: #333;
   width: 100%;
   height: 200px;
 }
 
+/* end :: footer */
 
+.grid-item{
+  display: flex;
+  background-color: blue;
+  border: solid 1px white;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  margin-top: 5rem;
+  grid-auto-flow: dense;
+  width: 100%;
+  height: 700px;
+}
+
+.item1{
+  grid-column: span 2;
+  grid-row: span 2 ;
+}
+.item2{
+  grid-column: 2;
+  grid-row: 1;
+}
+/* begin :: tecnicos */
+.accordion-button{
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+.accordion-body{
+  background-color: #fff;
+}
+.collum2{
+  font-weight: bold;
+}
+
+.itn-serie{
+  margin-top: 3rem;
+}
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+  color:black;
+  background:white;
+}
 #tecnicos{
+  overflow: auto
+  ;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   min-height: 100vh;
   background: white;
   animation: slideDown 750ms ease forwards;
@@ -336,17 +399,24 @@ footer{
   margin-top: 5rem;
 }
 
-#btn-bannerClose{
+.dados__tecnicos--close{
   position: absolute;
   top: 5%;
   left: 90%;
   transform: translate(-50%, -50%);
+  padding: 5px 5px;
   background-color: red;
   border: none;
-  padding: 5px 15px;
   font-size: 25px; 
   font-weight: bold;
 }
+#tecnicos svg{
+  color: white;
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
 @keyframes slideUp {
   0% {
     opacity: 0;
