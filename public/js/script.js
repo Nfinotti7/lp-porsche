@@ -48,11 +48,10 @@ window.onload = function () {
   );
 };
 
-$("#btn-banner").on("click", () => {
-
+$(".dados__tecnicos--open").on("click", () => {
   $("#tecnicos").addClass("active").css("display", "block");
 });
 
-$("#btn-bannerClose").on("click", () => {
+$(".dados__tecnicos--close").on("click", () => {
   $("#tecnicos").removeClass("active");
 });
