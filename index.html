@@ -70,11 +70,11 @@
       <nav class="navigation">
         <ul class="nav-menu">
           <li class="nav-item"><a href="#about">Sobre o Macan</a></li>
-          <li class="nav-item"><a href="#">360° Exterior</a></li>
-          <li class="nav-item"><a href="#">360° Interior</a></li>
-          <li class="nav-item"><a href="#tecnicos">Modelo e Dados</a></li>
-          <li class="nav-item"><a href="#">Galeria</a></li>
-          <li class="nav-item"><a href="#">Contato</a></li>
+          <li class="nav-item"><a href="#ext360">360° Exterior</a></li>
+          <li class="nav-item"><a href="#int360">360° Interior</a></li>
+          <li class="nav-item"><a href="#">Modelo e Dados</a></li>
+          <li class="nav-item"><a href="#gallery">Galeria</a></li>
+          <li class="nav-item"><a href="#contact">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -233,36 +233,10 @@
       </figure>
     </div>
   </section>
-  <section class="contact">
-    <div class="container">
-      <div class="formulario">
-        <h4>GOSTOU DESSE PORSCHE MACAN?</h4>
-        <p>ENTRE EM CONTATO COM A LOJA!</p>
-        <form action="POST" method="enviar.php">
-          <div class="mb-3">
-            <input type="email" placeholder="* Nome" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <input type="email" placeholder="* Celular" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <input type="email" placeholder="Email (opcional)" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <textarea name="" id="" rows="5" placeholder="* Mensagem" class="form-control"></textarea>
-          </div>
-        </form>
-        <button type="button" class="btn-msg">ENVIAR MENSAGEM</button>
-        <p>OU SE PREFERIR</p>
-        <button type="button" class="btn-wpp">INICIAR CONVERSA POR WHATSAPP</button>
-      </div>
-    </div>
-  </section>
 
-  <section class="gallery">
+
+  <section id="gallery">
+  <div class="gallery">
     <div class="container">
       <div class="">
         <a href="https://autoentusiastas.com.br/ae/wp-content/uploads/2021/07/PORSCHE-MACAN-2022-3.jpeg" data-lity="">
@@ -295,7 +269,39 @@
         </a>
       </div>
     </div>
+  </div>
   </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="formulario">
+        <h4>GOSTOU DESSE PORSCHE MACAN?</h4>
+        <p>ENTRE EM CONTATO COM A LOJA!</p>
+        <form action="POST" method="enviar.php">
+          <div class="mb-3">
+            <input type="email" placeholder="* Nome" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <input type="email" placeholder="* Celular" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <input type="email" placeholder="Email (opcional)" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <textarea name="" id="" rows="5" placeholder="* Mensagem" class="form-control"></textarea>
+          </div>
+        </form>
+        <button type="button" class="btn-msg">ENVIAR MENSAGEM</button>
+        <p>OU SE PREFERIR</p>
+        <button type="button" class="btn-wpp">INICIAR CONVERSA POR WHATSAPP</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   <footer>
