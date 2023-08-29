@@ -287,21 +287,35 @@ footer{
   height: 200px;
 }
 
+
 #tecnicos{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background: red;
+  background: white;
   animation: slideDown 750ms ease forwards;
+  z-index: 2;
 }
 #tecnicos.active {
   animation: slideUp 1s ease forwards;
-  z-index: 2;
-  
+}
+.container .dados{
+  margin-top: 5rem;
 }
 
+#btn-bannerClose{
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  border: none;
+  padding: 5px 15px;
+  font-size: 25px; 
+  font-weight: bold;
+}
 @keyframes slideUp {
   0% {
     opacity: 0;
@@ -329,3 +343,5 @@ footer{
     transform: translateY(100%);
   }
 }
+
+
