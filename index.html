@@ -33,26 +33,51 @@
 
 <body>
   <section id="banner">
-    <div class="banner01">
-      <button id="btn-banner"> > Dados Técnicos</button>
-      <figure class="img-banner">
-        <img src="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-4.jpg" alt="" width="100%"
-          height="100%">
-      </figure>
+    <figure class="img-banner">
+      <img src="https://garagem360.com.br/wp-content/uploads/2023/03/Porsche-Macan-GTS-2023-4.jpg" alt="" width="100%" height="100%">
+    </figure>
+
+    <div class="banner__content">
+      <div class="container">
+        <div class="banner__content--texts">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <h3>195kW/265 cv</h3>
+            <p>Potência (kW)/Potencia (cv)</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <h3>6,4 s</h3>
+            <p>Aceleração 0 - 100 km/h</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <h3>232 km/h</h3>
+            <p>Velocidade máxima</p>
+          </div>
+        </div>
+        </div>
+        <button class="btn btn_01 btn_01-inverted dados__tecnicos--open"> 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+          Dados Técnicos
+        </button>
+      </div>
     </div>
   </section>
 
   <section class="sticky-menu">
-    <nav class="navigation">
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="#about">Sobre o Macan</a></li>
-        <li class="nav-item"><a href="#">360° Exterior</a></li>
-        <li class="nav-item"><a href="#">360° Interior</a></li>
-        <li class="nav-item"><a href="#dados-tecnicos">Modelo e Dados</a></li>
-        <li class="nav-item"><a href="#">Galeria</a></li>
-        <li class="nav-item"><a href="#">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#about">Sobre o Macan</a></li>
+          <li class="nav-item"><a href="#">360° Exterior</a></li>
+          <li class="nav-item"><a href="#">360° Interior</a></li>
+          <li class="nav-item"><a href="#dados-tecnicos">Modelo e Dados</a></li>
+          <li class="nav-item"><a href="#">Galeria</a></li>
+          <li class="nav-item"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </section>
 
   <section id="about">
@@ -70,20 +95,19 @@
         </div>
         <div class="col-12 col-lg-4">
           <div class="img02-text">
-            <h4>O novo Macan</h4>
+            <h2>O novo Macan T.</h2>
             <p>O novo Macan: Destaque nos aspectos em que os
               outros se perdem na multidão. Jovem, dinâmico e
               urbano,com equipamentos de série completos,
               características de design exclusivas do modelo e,
               é claro, o tradicional desempenho Porsche.
             </p>
-            <button>
+            <button class="btn btn_01">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>
-
               Conhecer agora
             </button>
           </div>
@@ -244,9 +268,8 @@
     </div>
   </footer>
 
-  <section id="tecnicos">
-    <button id="btn-bannerClose">X
-    </button>
+  <section id="tecnicos" style="display: none;">
+    <button class="dados__tecnicos--close">Fechar</button>
     <div class="container">
       <h2 class="dados">Dados técnicos</h2>
       <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -265,43 +288,43 @@
                 <table class="table">
 
                   <tbody>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Número de cilindros</td>
                       <td class="collum2">4</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Diâmetro</td>
                       <td class="collum2">82,5 mm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Curso</td>
                       <td class="collum2">92,8 mm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Cilindrada</td>
                       <td class="collum2">1.984 cm³</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Potência (kW)</td>
                       <td class="collum2">195 kW</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Potência (cv)</td>
                       <td class="collum2">265cv</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Rotação máxima do motor</td>
                       <td class="collum2">6.800 1/min</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Torque máximo</td>
                       <td class="collum2">400 Nm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Máxima potência por litro (kW/l)</td>
                       <td class="collum2">98,00 kW/l</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Máxima potência por litro (cv/l)</td>
                       <td class="collum2">133,00 cv/l</td>
                     </tr>
@@ -324,27 +347,27 @@
               <div class="table-responsive">
                 <table class="table">
                   <tbody>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Velocidade máxima</td>
                       <td class="collum2">232 km/h</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Aceleração 0 - 100km/h</td>
                       <td class="collum2">6,4 s</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Aceleração 0 - 100 km/h com pacote Sport Chrono</td>
                       <td class="collum2">6,2 s</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Aceleração 0 - 160km/h</td>
                       <td class="collum2">16,3 s</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Aceleração 0 - 160km/h com Pacote Sport Chrono</td>
                       <td class="collum2">16,1 s</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Aceleração em marcha (80 - 120 km/h)</td>
                       <td class="collum2">4,5 s</td>
                     </tr>
@@ -369,19 +392,19 @@
               <div class="table-responsive">
                 <table class="table">
                   <tbody>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Dintância máxima entre oslo e componentes sensíveis à água (suspenção de aço)</td>
                       <td class="collum2">300mm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Ângulo de saída - suspensão de aço</td>
                       <td class="collum2">16,7°</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Máxima distância livre do solo - suspenção de aço</td>
                       <td class="collum2">202 mm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Máxima distância livre do solo - suspenção a ar (altura em nível Normal)</td>
                       <td class="collum2">187 mm</td>
                     </tr>
@@ -405,55 +428,55 @@
               <div class="table-responsive">
                 <table class="table">
                   <tbody>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Comprimento</td>
                       <td class="collum2">4.726 mm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Largura</td>
                       <td class="collum2">1.922 mm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Largura (com retrovisore)</td>
                       <td class="collum2">2.097mm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Altura</td>
                       <td class="collum2">1.621 mm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Entre-eixos</td>
                       <td class="collum2">2.807 mm</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Diâmetro de viragem</td>
                       <td class="collum2">12,0 m</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Peso (DIN)</td>
                       <td class="collum2">1.845 kg</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Peso (EU)</td>
                       <td class="collum2">1920 kg</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Peso bruto permitido</td>
                       <td class="collum2">2.510 kg</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Carga máxima</td>
                       <td class="collum2">665 kg</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Máxima carga de reboque (travado)</td>
                       <td class="collum2">2000 kg</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Máxima carga de reboque (destravado)</td>
                       <td class="collum2">750 kg</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Carga máxima admissível no teto com o sistema de transporte Porsche</td>
                       <td class="collum2">75 kg</td>
                     </tr>
@@ -476,19 +499,19 @@
               <div class="table-responsive">
                 <table class="table">
                   <tbody>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Volume do bagageiro aberto (atrás dos bancos dianteiros)</td>
                       <td class="collum2">954 l</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Volume do bagageiro aberto ( até ao contorno superior dos bancos traseiros)</td>
                       <td class="collum2">488 l</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Maior volume do bagageiro (atrás dos bancos dianteiros, até o teto)</td>
                       <td class="collum2">1.503 l</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Tanque de combustível</td>
                       <td class="collum2">75 l</td>
                     </tr>
@@ -515,10 +538,10 @@
                 <table class="table">
 
                   <tbody>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Freio de estacionamento acionado eletricamente e função Hold automática</td>
                     </tr>
-                    <tr class="">
+                    <tr>
                       <td scope="row">Sistema de freio antitravamento (ABS), sistema de estabilidade do veículo Porsche
                         Stability Management (PSM) com ABS, ASR, ABD, MSR e gestão da estabilidade do reboque e Porsche
                         Hill Control (PHC)</td>
