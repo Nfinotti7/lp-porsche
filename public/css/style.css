@@ -368,6 +368,11 @@ header img {
   transition: all 0.5s;
 }
 
+#contact .btn-wpp a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 #contact .btn-wpp svg {
   height: 1.5rem;
   width: 1.5rem;
