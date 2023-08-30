@@ -180,6 +180,8 @@ header img {
   align-items: center;
   justify-content: space-between;
   overflow-x: auto;
+  position: relative;
+  padding: 0;
 }
 
 .sticky-menu .navigation ul li {
@@ -189,7 +191,7 @@ header img {
 }
 
 .sticky-menu .navigation ul li a {
-  padding: 0px 10px;
+  padding: 0;
   text-align: justify;
   text-decoration: none;
   color: var(--black);
@@ -197,9 +199,18 @@ header img {
   transition: all 0.5s;
 }
 
-.sticky-menu .navigation ul li a:hover,
-.sticky-menu .navigation ul li a.active {
+.sticky-menu .navigation ul li a:hover {
   color: var(--primary-color);
+}
+
+.sticky-menu .navigation ul #scroll__spy--underline{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transform-origin: left center;
 }
 
 /* begin::ABOUT */
