@@ -1,4 +1,8 @@
 window.onload = function () {
+  const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: "#navbar-sticky",
+  });
+
   lax.init();
 
   // Add a driver that we use to control our animations
