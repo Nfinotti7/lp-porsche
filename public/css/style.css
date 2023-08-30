@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display:wght@400;500;600&display=swap");
 
-:root{
+:root {
   /* Step -2: 9.72px → 11.52px */
   --fs--2: clamp(0.61rem, calc(0.57rem + 0.18vw), 0.72rem);
 
   /* Step -1: 11.67px → 14.40px */
-  --fs--1: clamp(0.73rem, calc(0.67rem + 0.27vw), 0.90rem);
+  --fs--1: clamp(0.73rem, calc(0.67rem + 0.27vw), 0.9rem);
 
   /* Step 0: 14.00px → 18.00px */
-  --fs-0: clamp(0.88rem, calc(0.80rem + 0.40vw), 1.13rem);
+  --fs-0: clamp(0.88rem, calc(0.8rem + 0.4vw), 1.13rem);
 
   /* Step 1: 16.80px → 22.50px */
   --fs-1: clamp(1.05rem, calc(0.94rem + 0.57vw), 1.41rem);
 
   /* Step 2: 20.16px → 28.13px */
-  --fs-2: clamp(1.26rem, calc(1.10rem + 0.80vw), 1.76rem);
+  --fs-2: clamp(1.26rem, calc(1.1rem + 0.8vw), 1.76rem);
 
   /* Step 3: 24.19px → 35.16px */
-  --fs-3: clamp(1.51rem, calc(1.29rem + 1.10vw), 2.20rem);
+  --fs-3: clamp(1.51rem, calc(1.29rem + 1.1vw), 2.2rem);
 
   /* Step 4: 29.03px → 43.95px */
   --fs-4: clamp(1.81rem, calc(1.52rem + 1.49vw), 2.75rem);
@@ -60,10 +60,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-p{
+p {
   font-size: var(--fs-0);
 }
 
@@ -85,16 +85,16 @@ p{
   border-color: var(--white);
 }
 
-.btn.btn_01.btn_01-inverted svg>* {
+.btn.btn_01.btn_01-inverted svg > * {
   color: var(--white);
 }
 
-.btn.btn_01 svg>* {
+.btn.btn_01 svg > * {
   transition: all 200ms ease;
 }
 
 .btn.btn_01:hover,
-.btn.btn_01:hover svg>* {
+.btn.btn_01:hover svg > * {
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
@@ -332,7 +332,7 @@ header img {
   background: #ededed;
   border: none;
   border-bottom: 1px solid var(--primary-color);
-  padding: .7rem;
+  padding: 0.7rem;
 }
 
 #contact .btn-msg {
@@ -502,11 +502,38 @@ footer .footer__content p {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
+  
+ .banner__content .btn.btn_01{
+    position:relative;
+    margin-top: 1rem;
+    bottom: -4rem;
+  }
+
+  .banner__content--texts{
+    position: relative;
+    top: 7rem;
+    padding: 20px;
+    columns: 3;
+  }
+  
+  .container .banner__content--texts h3{
+    font-size: 16px;
+  }
+
+  .container .banner__content--texts p{
+    font-size: 8px;
+  }
+
+
   .gallery .container {
     max-height: fit-content;
     width: auto;
   }
+  #parallax-section-02 .parallax__content--title {
+    font-size: 28px;
+  }
 
-  #contact {}
+  #contact {
+  }
 }
