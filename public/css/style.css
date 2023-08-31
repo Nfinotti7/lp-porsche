@@ -202,7 +202,7 @@ header img {
   color: var(--primary-color);
 }
 
-.sticky-menu .navigation ul #scroll__spy--underline{
+.sticky-menu .navigation ul #scroll__spy--underline {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -368,11 +368,6 @@ header img {
   transition: all 0.5s;
 }
 
-#contact .btn-wpp a {
-  text-decoration: none;
-  color: var(--white);
-}
-
 #contact .btn-wpp svg {
   height: 1.5rem;
   width: 1.5rem;
@@ -387,7 +382,62 @@ header img {
 }
 
 /* end :: contact */
+#cards-carousel .container .row{
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: x mandatory;
+  scrollbar-width: none;
+  margin-bottom: 2rem;
+}
+#cards-carousel .col-lg-4{
+  width: 550px;
+  height: 350px;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px 3px #cecece;
 
+}
+#cards-carousel .col-lg-4 .card-img{
+  display: flex;
+  justify-content: flex-end;
+
+}
+#cards-carousel .col-lg-4 .card-title{
+  position: relative;
+  top: -4rem;
+  left: 2rem;
+}
+
+#cards-carousel .col-lg-4 .card-img img{
+  display: flex;
+  position: relative;
+  width: 200px;
+}
+
+.card-table .table{
+  width: 100%;
+  position: relative;
+  bottom: 2rem;
+}
+.card-table .table .collum2{
+  font-size: 16px;
+}
+.card-table .table .collum1{
+  font-size: 12px;
+}
+#cards-carousel .col-lg-4 button{
+  position: relative;
+  left: 120px;
+  bottom: 30px;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  background-color: var(--white);
+  border: 1px black solid;
+}
 /* begin :: footer */
 footer {
   background-color: #333;
@@ -519,37 +569,41 @@ footer .footer__content p {
 }
 
 @media (max-width: 750px) {
-  
- .banner__content .btn.btn_01{
-    position:relative;
+  .banner__content .btn.btn_01 {
+    position: relative;
     margin-top: 1rem;
     bottom: -4rem;
   }
 
-  .banner__content--texts{
+  .banner__content--texts {
     position: relative;
     top: 7rem;
     padding: 20px;
     columns: 3;
   }
-  
-  .container .banner__content--texts h3{
+
+  .container .banner__content--texts h3 {
     font-size: 16px;
   }
 
-  .container .banner__content--texts p{
+  .container .banner__content--texts p {
     font-size: 8px;
   }
 
-
   .gallery .container {
     max-height: fit-content;
-    width: auto;
+    width: 1100px;
   }
   #parallax-section-02 .parallax__content--title {
     font-size: 28px;
   }
 
   #contact {
+  }
+  .card {
+    position: relative;
+    width: 30%px;
+    height: 350px;
+    background-color: var(--white);
   }
 }
