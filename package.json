@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "@react-spring/parallax": "^9.7.3",
     "bootstrap": "^5.3.1",
     "jquery": "^3.7.0",

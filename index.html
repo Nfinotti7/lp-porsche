@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap"
       rel="stylesheet">
 
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/lity/dist/lity.min.css">
     <link rel="stylesheet" href="public/css/style.css">
@@ -303,42 +304,129 @@
       </div>
     </section>
 
-    <section id="cards-carousel">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card-img">
-              <img src="https://www.pngkey.com/png/full/237-2375714_2018-porsche-macan-sport-edition-near-los-angeles.png" alt="">
+
+
+    <section class="carousel">
+      <div class="container-xxl">
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div id="cards-carousel">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card-img">
+                      <img src="https://www.pngkey.com/png/full/237-2375714_2018-porsche-macan-sport-edition-near-los-angeles.png" alt="">
+                    </div>
+                    <div class="card-title">
+                      <h3>Macan</h3>
+                    </div>
+                    <div class="card-table">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="collum2">195 kW/265 cv</td>
+                            <td class="collum1">Potência (kW)/Potência (cv)</td>
+                          </tr>
+                          <tr>
+                            <td class="collum2">6,4s</td>
+                            <td class="collum1">Aceleração 0-100 km/h</td>
+                          </tr>
+                          <tr>
+                            <td class="collum2">232 km/h</td>
+                            <td class="collum1">Velocidade máxima</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <button>Dados técnicos</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card-title">
-              <h3>Macan</h3>
+          </li>
+          <li class="glide__slide">
+            <div id="cards-carousel">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card-img">
+                    <img src="https://www.pngkey.com/png/full/237-2375714_2018-porsche-macan-sport-edition-near-los-angeles.png" alt="">
+                  </div>
+                  <div class="card-title">
+                    <h3>Macan</h3>
+                  </div>
+                  <div class="card-table">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td class="collum2">195 kW/265 cv</td>
+                          <td class="collum1">Potência (kW)/Potência (cv)</td>
+                        </tr>
+                        <tr>
+                          <td class="collum2">6,4s</td>
+                          <td class="collum1">Aceleração 0-100 km/h</td>
+                        </tr>
+                        <tr>
+                          <td class="collum2">232 km/h</td>
+                          <td class="collum1">Velocidade máxima</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button>Dados técnicos</button>
+                </div>
+              </div>
             </div>
-            <div class="card-table">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td class="collum2">195 kW/265 cv</td>
-                    <td class="collum1">Potência (kW)/Potência (cv)</td>
-                  </tr>
-                  <tr>
-                    <td class="collum2">6,4s</td>
-                    <td class="collum1">Aceleração 0-100 km/h</td>
-                  </tr>
-                  <tr>
-                    <td class="collum2">232 km/h</td>
-                    <td class="collum1">Velocidade máxima</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <button>Dados técnicos</button>
           </div>
-          <div class="col-lg-4"></div>
-          <div class="col-lg-4"></div>
-        </div>
+        </li>
+          <li class="glide__slide">
+            <div id="cards-carousel">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card-img">
+                    <img src="https://www.pngkey.com/png/full/237-2375714_2018-porsche-macan-sport-edition-near-los-angeles.png" alt="">
+                  </div>
+                  <div class="card-title">
+                    <h3>Macan</h3>
+                  </div>
+                  <div class="card-table">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td class="collum2">195 kW/265 cv</td>
+                          <td class="collum1">Potência (kW)/Potência (cv)</td>
+                        </tr>
+                        <tr>
+                          <td class="collum2">6,4s</td>
+                          <td class="collum1">Aceleração 0-100 km/h</td>
+                        </tr>
+                        <tr>
+                          <td class="collum2">232 km/h</td>
+                          <td class="collum1">Velocidade máxima</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button>Dados técnicos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+      </div>
+    </div>
       </div>
     </section>
 
+    
     <footer>
       <div class="container">
         <div class="footer__content">
@@ -751,5 +839,16 @@
     <script src="node_modules/lity/dist/lity.js"></script>
     <script src="node_modules/lax.js/lib/lax.min.js"></script>
     <script src="public/js/script.js" type="module"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+<script>
+ 
+  new Glide('.glide',{
+    type: 'carousel',
+    startAt: 0,
+    perView: 2,
+    focusAt:'center'
+  }).mount();
+</script>
   </body>
 </html>
