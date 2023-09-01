@@ -441,9 +441,21 @@ header img {
   color: red;
   border: 1px red solid;
 }
-.glide .glide__arrow{
-  color: #000;
-  box-sizing: border-box;
+.glide__arrow--left svg{
+  width: 2rem;
+  color: black;
+  transition: all 0.5s;
+}
+.glide__arrow--left svg:hover{
+  color: red;
+}
+.glide__arrow--right svg{
+  width: 2rem;
+  color: black;
+  transition: all 0.5s;
+}
+.glide__arrow--right svg:hover{
+  color: red;
 }
 
 /* end :: carousel */
