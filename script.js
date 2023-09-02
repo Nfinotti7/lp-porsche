@@ -1,6 +1,6 @@
 import { ScrollSpy } from "bootstrap";
 // import * as bootstrap from "bootstrap";
-import * as $ from "jquery";
+import $ from "jquery";
 import "lity";
 import * as lax from "lax.js";
 import Glide from "@glidejs/glide";
@@ -11,12 +11,11 @@ import "@glidejs/glide/dist/css/glide.theme.min.css";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import "./style.css";
 
-window.onload = function () {
-  const scrollSpy = new ScrollSpy(document.body, {
-    target: "#navbar-sticky",
-  });
+window.$ = $;
 
-  $(window).on("activate.bs.scrollspy", function () {
+window.onload = function () {
+  const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]');
+  firstScrollSpyEl.addEventListener("activate.bs.scrollspy", () => {
     if (!$("#navbar-sticky li a.active").length > 0) return;
     const linkOffsetLeft =
       $("#navbar-sticky li a.active").offset().left -
