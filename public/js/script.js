@@ -71,18 +71,33 @@ window.onload = function () {
       // Animation data
       scrollY: {
         opacity: [
-          ["elInY", "elOutY"],
+          ["elInY", "elInY+400"],
           [0, 1],
         ],
       },
     }
   );
+
+  const carCarousel = new Glide("#similar__cars--carousel", {
+    type: "slide",
+    startAt: 0,
+    perView: 3,
+    focusAt: "center",
+    breakpoints: {
+      1024: {
+        perView: 2,
+      },
+      768: {
+        perView: 1,
+      },
+    },
+  }).mount();
+
+  $(".technical__data--open").on("click", () => {
+    $("#technical__data").addClass("active").css("display", "block");
+  });
+
+  $(".technical__data--close").on("click", () => {
+    $("#technical__data").removeClass("active");
+  });
 };
-
-$(".technical__data--open").on("click", () => {
-  $("#technical__data").addClass("active").css("display", "block");
-});
-
-$(".technical__data--close").on("click", () => {
-  $("#technical__data").removeClass("active");
-});
