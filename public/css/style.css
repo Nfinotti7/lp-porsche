@@ -204,7 +204,7 @@ header img {
   text-decoration: none;
   color: var(--black);
   font-size: var(--fs-1);
-  transition: all 0.5s;
+  transition: all 250ms ease;
 }
 
 .sticky-menu .navigation ul li a:hover {
@@ -356,41 +356,37 @@ header img {
   padding: 0.7rem;
 }
 
-#contact .btn-msg {
+#contact .btn{
   width: 100%;
-  background-color: var(--primary-color);
-  border: 0px;
+  border: none;
+  outline: none;
+  border-radius: 0;
   padding: 15px;
   color: var(--white);
-  transition: all 0.5s;
+  transition: all 250ms ease;
+  font-size: var(--fs-0);
 }
 
-#contact .btn-msg:hover {
+#contact .btn.btn-msg {
+  background-color: var(--primary-color);
+}
+
+#contact .btn.btn-wpp {
+  background-color: rgb(43, 168, 51);
+}
+
+#contact .btn:hover {
   filter: brightness(0.8);
 }
 
-#contact .btn-wpp {
-  width: 100%;
-  background-color: rgb(43, 168, 51);
-  border: 0px;
-  padding: 15px;
-  color: var(--white);
-  transition: all 0.5s;
-}
-
 #contact .btn-wpp svg {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 #contact .btn-wpp svg * {
   color: var(--white);
 }
-
-#contact .btn-wpp:hover {
-  filter: brightness(0.8);
-}
-
 /* end :: contact */
 
 /* begin :: carousel */
