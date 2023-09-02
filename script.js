@@ -1,5 +1,18 @@
+import { ScrollSpy } from "bootstrap";
+// import * as bootstrap from "bootstrap";
+import * as $ from "jquery";
+import "lity";
+import * as lax from "lax.js";
+import Glide from "@glidejs/glide";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "lity/dist/lity.min.css";
+import "@glidejs/glide/dist/css/glide.theme.min.css";
+import "@glidejs/glide/dist/css/glide.core.min.css";
+import "./style.css";
+
 window.onload = function () {
-  const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  const scrollSpy = new ScrollSpy(document.body, {
     target: "#navbar-sticky",
   });
 

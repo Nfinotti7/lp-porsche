@@ -222,6 +222,10 @@ header img {
 }
 
 /* begin::ABOUT */
+#about {
+  scroll-margin-top: 120px;
+}
+
 #about .about__content {
   display: flex;
   flex-direction: column;
@@ -244,6 +248,7 @@ header img {
 /* end::ABOUT */
 
 /* begin::PARALLAX */
+
 .parallax {
   height: 160vh;
 }
@@ -301,6 +306,9 @@ header img {
 }
 
 /* end::PARALLAX */
+#gallery {
+  scroll-margin-top: 120px;
+}
 #gallery .gallery__grid {
   margin: 0 auto;
   background: #f3f3f3;
@@ -337,6 +345,7 @@ header img {
 
 /* begin::CONTACT */
 #contact {
+  scroll-margin-top: 120px;
   margin: 4rem 0;
 }
 
