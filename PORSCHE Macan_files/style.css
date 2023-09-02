@@ -82,14 +82,7 @@ body {
   display: flex;
 }
 
-.about .img02 {
-  width: 100%;
-  box-sizing: border-box;
-
-
-}
-
-.about .img02-text {
+.about .about__content {
   box-sizing: content-box;
   max-width: 40ch;
   padding: 40px;
@@ -99,7 +92,7 @@ body {
   margin-top: 3rem;
 }
 
-.about .img02-text p {
+.about .about__content p {
   max-width: 70ch;
 }
 
