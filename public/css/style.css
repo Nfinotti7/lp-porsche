@@ -26,7 +26,8 @@
   /* Step 5: 34.84px → 54.93px */
   --fs-5: clamp(2.18rem, calc(1.78rem + 2.01vw), 3.43rem);
 
-  --primary-color: red;
+  --primary-color: #d5001c;
+  --primary-color-active: #c2061f;
   --secondary-color: #333;
   --white: #fff;
   --black: #000;
@@ -46,8 +47,10 @@ html {
 }
 
 body {
-  color: #333;
+  color: var(--secondary-color);
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 figure {
@@ -208,7 +211,7 @@ header img {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: red;
+  background-color: var(--primary-color);
   transform-origin: left center;
 }
 
@@ -250,7 +253,7 @@ header img {
 .parallax__bg figure {
   margin: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .parallax__bg figure img {
@@ -261,7 +264,7 @@ header img {
 
 .parallax__bg .parallax__bg--overlay {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -349,7 +352,7 @@ header img {
 
 #contact .btn-msg {
   width: 100%;
-  background-color: rgb(212, 60, 60);
+  background-color: var(--primary-color);
   border: 0px;
   padding: 15px;
   color: var(--white);
@@ -434,35 +437,35 @@ header img {
   height: 50px;
   padding: 10px;
   background-color: var(--white);
-  border: 1px black solid;
+  border: 1px var(--black) solid;
   transition: all 0.5s;
 }
 #cards-carousel .col-lg-4 button:hover{
-  color: red;
-  border: 1px red solid;
+  color: var(--primary-color);
+  border: 1px var(--primary-color) solid;
 }
 .glide__arrow--left svg{
   width: 2rem;
-  color: black;
+  color: var(--black);
   transition: all 0.5s;
 }
 .glide__arrow--left svg:hover{
-  color: red;
+  color: var(--primary-color);
 }
 .glide__arrow--right svg{
   width: 2rem;
-  color: black;
+  color: var(--black);
   transition: all 0.5s;
 }
 .glide__arrow--right svg:hover{
-  color: red;
+  color: var(--primary-color);
 }
 
 /* end :: carousel */
 
 /* begin :: footer */
 footer {
-  background-color: #333;
+  background-color: var(--secondary-color);
   color: var(--white);
   width: 100%;
   padding: 1rem 0;
@@ -486,26 +489,15 @@ footer .footer__content p {
 .grid-item {
   display: flex;
   background-color: blue;
-  border: solid 1px white;
+  border: solid 1px var(--white);
 }
 
 /* begin :: tecnicos */
 .accordion-button {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: 400;
   color: var(--black);
-}
-
-.accordion-body {
-  background-color: var(--white);
-}
-
-.collum2 {
-  font-weight: bold;
-}
-
-.itn-serie {
-  margin-top: 3rem;
+  transition: all 250ms ease;
 }
 
 .accordion-button:focus {
@@ -513,11 +505,39 @@ footer .footer__content p {
 }
 
 .accordion-button:not(.collapsed) {
-  color: black;
-  background: white;
+  color: var(--black);
+  background: var(--white);
 }
 
-#tecnicos {
+.accordion-button:hover {
+  color: var(--primary-color);
+}
+.accordion-item {
+  border-left: 0;
+  border-right: 0;
+}
+
+.accordion-body {
+  background-color: var(--white);
+  padding: 1rem;
+}
+.accordion-button,
+.accordion-body,
+.accordion-body td {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.collum2 {
+  font-weight: 600;
+  font-size: var(--fs-0);
+}
+
+.itn-serie {
+  margin-top: 3rem;
+}
+
+#technical__data {
   overflow: auto;
   position: fixed;
   top: 0;
@@ -525,36 +545,107 @@ footer .footer__content p {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background: white;
+  background: var(--white);
   animation: slideDown 750ms ease forwards;
   z-index: 2;
 }
 
-#tecnicos.active {
+#technical__data.active {
   animation: slideUp 1s ease forwards;
 }
 
-.container .dados {
-  margin-top: 5rem;
-}
-
-.dados__tecnicos--close {
-  position: absolute;
-  top: 5%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-  padding: 5px 5px;
-  background-color: var(--primary-color);
+.technical__data--close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 20px;
+  right: 50px;
+  margin-left: auto;
+  z-index: 9999;
+  box-shadow: 5px 5px 5px -2.5px rgba(0,0,0,.2);
+  background-color: #d5001c;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
   border: none;
-  font-size: 25px;
-  font-weight: bold;
-  z-index: 3;
+  transition: all 150ms ease;
+}
+.technical__data--close:hover {
+  background-color: var(--primary-color-active);
 }
 
-#tecnicos svg {
-  color: white;
+#technical__data .technical__data--close svg {
+  color: var(--white);
   height: 40px;
   width: auto;
+  object-fit: contain;
+}
+
+#technical__data .technical__data--header {
+  background: #eff0f1;
+  padding: 2rem 0;
+  margin-top: -50px;
+}
+#technical__data .technical__data--header h2{
+  font-size: var(--fs-3);
+}
+
+#technical__data .technical__data--header .technical__data--header__data{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+  row-gap: 1rem;
+}
+
+#technical__data .technical__data--header .technical__data--header__data > div{
+  padding: 0 1rem;
+  border-left: 1px solid #ddd;
+}
+
+#technical__data .technical__data--header .technical__data--header__data > div:first-child{
+  padding-left: 0;
+  border-left: 0;
+}
+
+#technical__data .technical__data--header .technical__data--header__data h3{
+  font-size: var(--fs-0);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#technical__data .technical__data--header .technical__data--header__data p{
+  font-size: var(--fs--1);
+  margin-bottom: 0;
+}
+
+#technical__data .technical__data--content {
+  padding: 3rem 0 4rem;
+}
+
+#technical__data .technical__data--content .technical__data--title{
+  font-size: var(--fs-2);
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+#technical__data .technical__data--figure--wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 600px;
+}
+#technical__data .technical__data--figure {
+  transform: rotate(90deg);
+  width: auto;
+  height: 100%;
+  position: sticky;
+}
+#technical__data .technical__data--figure img{
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -652,7 +743,7 @@ footer .footer__content p {
     height: 30px;
     padding: 10px;
     background-color: var(--white);
-    border: 1px black solid;
+    border: 1px var(--black) solid;
     transition: all 0.5s;
     font-size: 8px;
   }

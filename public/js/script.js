@@ -79,10 +79,10 @@ window.onload = function () {
   );
 };
 
-$(".dados__tecnicos--open").on("click", () => {
-  $("#tecnicos").addClass("active").css("display", "block");
+$(".technical__data--open").on("click", () => {
+  $("#technical__data").addClass("active").css("display", "block");
 });
 
-$(".dados__tecnicos--close").on("click", () => {
-  $("#tecnicos").removeClass("active");
+$(".technical__data--close").on("click", () => {
+  $("#technical__data").removeClass("active");
 });
