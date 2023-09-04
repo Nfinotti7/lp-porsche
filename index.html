@@ -453,11 +453,32 @@
       </div>
     </section>
 
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {pageLanguage: 'pt'},
+          'google__translate'
+        );
+      }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <footer>
       <div class="container">
-        <div class="footer__content">
-          <p>&copy; 2023 Concessionária X. Todos os direitos reservados.</p>
-          <p>Desenvolvido por X</p>
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <div>
+              <label for="google__translate--select">Alterar Idioma</label>
+              <div id="google__translate"></div>
+            </div>
+            <div >
+              <a href="/politica-de-privacidade.html">Política de Privacidade</a>
+            </div>
+          </div>
+          <div class="footer__bottom w-100">
+            <p>&copy; 2023 Concessionária X. Todos os direitos reservados.</p>
+            <p>Desenvolvido por X</p>
+          </div>
         </div>
       </div>
     </footer>
