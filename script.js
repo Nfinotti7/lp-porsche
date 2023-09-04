@@ -91,7 +91,7 @@ window.onload = function () {
   );
 
   const carCarousel = new Glide("#similar__cars--carousel", {
-    type: "slide",
+    type: "carousel",
     startAt: 0,
     perView: 3,
     focusAt: "center",

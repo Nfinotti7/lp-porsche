@@ -205,6 +205,7 @@ header img {
   color: var(--black);
   font-size: var(--fs-1);
   transition: all 250ms ease;
+  cursor: pointer;
 }
 
 .sticky-menu .navigation ul li a:hover {
@@ -224,6 +225,18 @@ header img {
 /* begin::ABOUT */
 #about {
   scroll-margin-top: 120px;
+}
+
+#about .about__img--wrapper ,
+#about .about__img--wrapper img,
+#about .about__img--wrapper iframe {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#about .about__img--wrapper iframe {
+  aspect-ratio: 16/9;
 }
 
 #about .about__content {
@@ -255,8 +268,8 @@ header img {
 }
 
 #exterior-360-view iframe,
-#interior-360-view iframe {
-  height: 100%;
+#interior-360-view iframe{
+  height: calc(100% + 1px);
   width: 100%;
   margin: 0;
 }
