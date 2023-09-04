@@ -139,10 +139,17 @@ header img {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  padding: 5rem 0;
+}
+
+.banner__content .section__title {
+  font-size: var(--fs-5);
+  letter-spacing: 3px;
 }
 
 .banner__content .banner__content--texts {
@@ -742,19 +749,19 @@ footer .footer__content p {
 }
 
 @media screen and (max-width: 749px) {
-  .banner__content .btn.btn_01 {
-    position: relative;
-    margin-top: 1rem;
-    bottom: -4rem;
-
-    padding: 7px 14px;
+  header svg, header img {
+    height: 10px;
+    width: auto;
+    object-fit: contain;
   }
 
-  .banner__content--texts {
-    position: relative;
-    top: 7rem;
-    padding: 20px;
-    columns: 3;
+  .banner__content {
+    padding: 1rem 0;
+  }
+
+  .banner__content .section__title {
+    font-size: var(--fs-2);
+    letter-spacing: 3px;
   }
 
   .container .banner__content--texts h3 {
