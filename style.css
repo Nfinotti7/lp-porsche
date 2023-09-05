@@ -269,17 +269,57 @@ header img {
 /* end::ABOUT */
 
 /* 360 IFRAMES */
-#exterior-360-view,
-#interior-360-view {
+.view__360--section .iframe__wrapper{
   height: 80vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.view__360--section .iframe__wrapper .iframe__shield {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view__360--section .iframe__wrapper .iframe__shield button{
+  border-radius: 100vw;
+  height: 8rem;
+  width: 8rem;
+  aspect-ratio: 1;
+  padding: 2rem;
+  background: var(--primary-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 250ms ease;
+  z-index: 2;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+  color: var(--white);
+}
+
+.view__360--section .iframe__wrapper .iframe__shield button svg{
+  height: 100%;
   width: 100%;
 }
 
-#exterior-360-view iframe,
-#interior-360-view iframe{
+.view__360--section .iframe__wrapper .iframe__shield button:hover{
+  filter: brightness(0.8);
+}
+
+.view__360--section .iframe__wrapper iframe{
   height: calc(100% + 1px);
   width: 100%;
   margin: 0;
+  object-fit: contain;
+  overflow: hidden;
 }
 /* 360 IFRAMES */
 
