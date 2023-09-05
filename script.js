@@ -83,7 +83,7 @@ window.onload = function () {
       // Animation data
       scrollY: {
         opacity: [
-          ["elInY", "elInY+screenHeight/4"],
+          ["elInY", "elInY+300"],
           [0, 1],
         ],
       },

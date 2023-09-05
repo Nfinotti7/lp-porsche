@@ -247,6 +247,21 @@ header img {
 
 /* end::ABOUT */
 
+/* 360 IFRAMES */
+#exterior-360-view,
+#interior-360-view{
+  height: 80vh;
+  width: 100%;
+}
+
+#exterior-360-view iframe,
+#interior-360-view iframe{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+/* 360 IFRAMES */
+
 /* begin::PARALLAX */
 
 .parallax {
