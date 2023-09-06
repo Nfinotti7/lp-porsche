@@ -111,6 +111,15 @@ window.onload = function () {
     $(".technical__data--close").on("click", () => {
       $("#technical__data").removeClass("active");
     });
+
+    $(".view__360--section .iframe__shield button").on("click", function () {
+      $(this).closest(".iframe__shield").hide();
+      console.log("clicked");
+    });
+
+    $(".view__360--section .iframe__wrapper").on("mouseleave", function () {
+      $(this).find(".iframe__shield").show();
+    });
   }
 
   const intervalGoogleSelect = setInterval(() => {
