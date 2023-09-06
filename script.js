@@ -107,6 +107,13 @@ window.onload = function () {
       },
     }).mount();
 
+    new Glide("#gallery-carousel", {
+      type: "carousel",
+      startAt: 0,
+      perView: 1,
+      focusAt: "center",
+    }).mount();
+
     $(".technical__data--open").on("click", () => {
       $("#technical__data").addClass("active").css("display", "block");
     });
@@ -132,12 +139,4 @@ window.onload = function () {
       clearInterval(intervalGoogleSelect);
   }, 500);
 };
-new Glide('.glide').mount();
-
-
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '#gallery',
-  children: 'a',
-  pswpModule: () => import('photoswipe')
-});
-lightbox.init();
+new Glide(".glide").mount();
