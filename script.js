@@ -129,3 +129,4 @@ window.onload = function () {
       clearInterval(intervalGoogleSelect);
   }, 500);
 };
+new Glide('.glide').mount();

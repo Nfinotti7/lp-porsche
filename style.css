@@ -405,6 +405,11 @@ header img {
   grid-column: span 2;
 }
 
+#gallery .glide__arrows button{
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+}
+
 /*.big-stretch{
   grid-row: span 2;
   grid-column: span 2;
