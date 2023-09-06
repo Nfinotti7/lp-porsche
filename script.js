@@ -9,6 +9,9 @@ import "@glidejs/glide/dist/css/glide.theme.min.css";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import "./style.css";
 
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
 window.$ = $;
 
 window.onload = function () {
@@ -130,3 +133,11 @@ window.onload = function () {
   }, 500);
 };
 new Glide('.glide').mount();
+
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery',
+  children: 'a',
+  pswpModule: () => import('photoswipe')
+});
+lightbox.init();
