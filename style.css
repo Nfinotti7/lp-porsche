@@ -383,7 +383,6 @@ header img {
 
 /* end::PARALLAX */
 #gallery {
-  margin-top: 120px;
   scroll-margin-top: 120px;
 }
 
@@ -403,11 +402,6 @@ header img {
 
 .h-stretch {
   grid-column: span 2;
-}
-
-#gallery .glide__arrows button{
-  background-color: transparent;
-  backdrop-filter: blur(8px);
 }
 
 /*.big-stretch{
@@ -483,7 +477,7 @@ header img {
 
 /* begin :: carousel */
 #cars-carousel {
-  padding: 4rem 0;
+  padding: 2rem 0 4rem;
 }
 
 #cars-carousel #similar__cars--carousel {
@@ -533,6 +527,7 @@ header img {
   background-color: var(--white);
   transition: all 250ms ease;
   aspect-ratio: 1;
+  border-radius: 0;
 }
 
 .glide__arrows button svg {
