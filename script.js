@@ -140,3 +140,10 @@ window.onload = function () {
   }, 500);
 };
 new Glide(".glide").mount();
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery',
+  children: 'a',
+  pswpModule: () => import('photoswipe')
+});
+lightbox.init();
