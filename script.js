@@ -1,18 +1,4 @@
-import $ from "jquery";
-import "lity";
-import * as lax from "lax.js";
-import Glide from "@glidejs/glide";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "lity/dist/lity.min.css";
-import "@glidejs/glide/dist/css/glide.theme.min.css";
-import "@glidejs/glide/dist/css/glide.core.min.css";
-import "./style.css";
-
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import 'photoswipe/style.css';
-
-window.$ = $;
+import PhotoSwipeLightbox from "./assets/photoswipe/photoswipe-lightbox.esm.min.js";
 
 window.onload = function () {
   if ($(".parallax").length > 0) {
@@ -138,12 +124,11 @@ window.onload = function () {
     if ($("#google__translate select").hasClass("form-control"))
       clearInterval(intervalGoogleSelect);
   }, 500);
-};
-new Glide(".glide").mount();
 
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '#gallery',
-  children: 'a',
-  pswpModule: () => import('photoswipe')
-});
-lightbox.init();
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("./assets/photoswipe/photoswipe.esm.min.js"),
+  });
+  lightbox.init();
+};

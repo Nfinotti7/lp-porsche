@@ -420,11 +420,6 @@ header img {
   font-weight: bold;
 }
 
-#gallery #gallery-carousel button{
-  background-color: transparent;
-  backdrop-filter: blur(8px);
-}
-
 /* begin::CONTACT */
 #contact {
   scroll-margin-top: 120px;
