@@ -1,51 +1,50 @@
-import PhotoSwipeLightbox from "./assets/photoswipe/photoswipe-lightbox.esm.min.js";
+import PhotoSwipeLightbox from './assets/photoswipe/photoswipe-lightbox.esm.min.js';
 
 window.onload = function () {
-  if ($(".parallax").length > 0) {
+  if ($('#navbar-sticky').length > 0) {
     const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]');
-    firstScrollSpyEl.addEventListener("activate.bs.scrollspy", () => {
-      if (!$("#navbar-sticky li a.active").length > 0) return;
-      const linkOffsetLeft =
-        $("#navbar-sticky li a.active").offset().left -
-        $("#navbar-sticky").offset().left +
-        $("#navbar-sticky").scrollLeft();
-      const linkWidth = $("#navbar-sticky li a.active").width();
+    firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
+      if (!$('#navbar-sticky li a.active').length > 0) return;
+      const linkOffsetLeft = $('#navbar-sticky li a.active').offset().left - $('#navbar-sticky').offset().left + $('#navbar-sticky').scrollLeft();
+      const linkWidth = $('#navbar-sticky li a.active').width();
 
-      $("#scroll__spy--underline").show();
-      $("#scroll__spy--underline").animate({
+      $('#scroll__spy--underline').show();
+      $('#scroll__spy--underline').animate({
         left: linkOffsetLeft,
         width: linkWidth,
       });
 
       if (linkOffsetLeft + linkWidth > $(window).width()) {
-        $("#navbar-sticky").stop().animate({
+        $('#navbar-sticky').stop().animate({
           scrollLeft: linkOffsetLeft,
         });
-      } else if ($("#navbar-sticky li a.active").offset().left < 0) {
-        $("#navbar-sticky")
+      } else if ($('#navbar-sticky li a.active').offset().left < 0) {
+        $('#navbar-sticky')
           .stop()
           .animate({
-            scrollLeft: $("#navbar-sticky li a.active").offset().left,
+            scrollLeft: $('#navbar-sticky li a.active').offset().left,
           });
       }
     });
+  }
 
+  if ($('.parallax').length > 0) {
     lax.init();
 
     // Add a driver that we use to control our animations
-    lax.addDriver("scrollY", function () {
+    lax.addDriver('scrollY', function () {
       return window.scrollY;
     });
 
-    const parallaxHeight = $(".parallax").height().toFixed() / 2;
+    const parallaxHeight = $('.parallax').height().toFixed() / 2;
 
     lax.addElements(
-      ".parallax__bg--overlay", // Element selector rule
+      '.parallax__bg--overlay', // Element selector rule
       {
         // Animation data
         scrollY: {
           opacity: [
-            [`elInY+${parallaxHeight}`, "elOutY"],
+            [`elInY+${parallaxHeight}`, 'elOutY'],
             [0, 0.8],
           ],
         },
@@ -53,12 +52,12 @@ window.onload = function () {
     );
 
     lax.addElements(
-      ".parallax__bg img", // Element selector rule
+      '.parallax__bg img', // Element selector rule
       {
         // Animation data
         scrollY: {
           scale: [
-            ["elInY", "elOutY"],
+            ['elInY', 'elOutY'],
             [1, 1.05],
           ],
         },
@@ -66,23 +65,25 @@ window.onload = function () {
     );
 
     lax.addElements(
-      ".parallax__content--text", // Element selector rule
+      '.parallax__content--text', // Element selector rule
       {
         // Animation data
         scrollY: {
           opacity: [
-            ["elInY", "elInY+300"],
+            ['elInY', 'elInY+300'],
             [0, 1],
           ],
         },
       }
     );
+  }
 
-    new Glide("#similar__cars--carousel", {
-      type: "carousel",
+  if ($('#similar__cars--carousel').length > 0) {
+    new Glide('#similar__cars--carousel', {
+      type: 'carousel',
       startAt: 0,
       perView: 3,
-      focusAt: "center",
+      focusAt: 'center',
       breakpoints: {
         1024: {
           perView: 2,
@@ -92,43 +93,140 @@ window.onload = function () {
         },
       },
     }).mount();
+  }
 
-    new Glide("#gallery-carousel", {
-      type: "carousel",
+  if ($('#gallery-carousel').length > 0) {
+    new Glide('#gallery-carousel', {
+      type: 'carousel',
       startAt: 0,
       perView: 1,
-      focusAt: "center",
+      focusAt: 'center',
     }).mount();
+  }
 
-    $(".technical__data--open").on("click", () => {
-      $("#technical__data").addClass("active").css("display", "block");
+  if ($('#technical__data').length > 0) {
+    $('.technical__data--open').on('click', () => {
+      $('#technical__data').addClass('active').css('display', 'block');
     });
 
-    $(".technical__data--close").on("click", () => {
-      $("#technical__data").removeClass("active");
+    $('.technical__data--close').on('click', () => {
+      $('#technical__data').removeClass('active');
+    });
+  }
+
+  if ($('.view__360--section').length > 0) {
+    $('.view__360--section .iframe__shield button').on('click', function () {
+      $(this).closest('.iframe__shield').hide();
+      console.log('clicked');
     });
 
-    $(".view__360--section .iframe__shield button").on("click", function () {
-      $(this).closest(".iframe__shield").hide();
-      console.log("clicked");
-    });
-
-    $(".view__360--section .iframe__wrapper").on("mouseleave", function () {
-      $(this).find(".iframe__shield").show();
+    $('.view__360--section .iframe__wrapper').on('mouseleave', function () {
+      $(this).find('.iframe__shield').show();
     });
   }
 
   const intervalGoogleSelect = setInterval(() => {
-    $("#google__translate select").addClass("form-control");
-    $("#google__translate select").attr("id", "google__translate--select");
-    if ($("#google__translate select").hasClass("form-control"))
-      clearInterval(intervalGoogleSelect);
+    $('#google__translate select').addClass('form-control');
+    $('#google__translate select').attr('id', 'google__translate--select');
+    if ($('#google__translate select').hasClass('form-control')) clearInterval(intervalGoogleSelect);
   }, 500);
 
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: "#gallery",
-    children: "a",
-    pswpModule: () => import("./assets/photoswipe/photoswipe.esm.min.js"),
-  });
-  lightbox.init();
+  if ($('#gallery').length > 0) {
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery',
+      children: 'a',
+      pswpModule: () => import('./assets/photoswipe/photoswipe.esm.min.js'),
+    });
+    lightbox.init();
+  }
+
+  if ($('#btn__send--form').length > 0) {
+    grecaptcha.ready(function () {
+      grecaptcha.render('btn__send--form', {
+        sitekey: '6LeXAQ4oAAAAAMj0DhaC7J17S-jDUlPlxlrFB3k7',
+      });
+    });
+
+    $('#btn__send--form').on('click', function (e) {
+      e.preventDefault();
+      const form = $(this).closest('form');
+
+      if (!form[0].checkValidity()) {
+        form[0].reportValidity();
+        return;
+      }
+
+      Swal.fire({
+        title: 'Enviando...',
+        html: 'Aguarde um momento...',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        didOpen: async () => {
+          Swal.showLoading();
+          const token = await grecaptcha.execute();
+
+          try {
+            const result = await $.ajax({
+              type: 'POST',
+              url: './enviar.php',
+              data: form.serializeArray(),
+            });
+
+            console.log(result);
+            if (result == 'sucesso') {
+              Swal.fire({
+                title: 'Sucesso',
+                text: 'Sua mensagem foi enviada com sucesso!',
+                icon: 'success',
+                // timer: 3000,
+                // showProgressBar: true,
+                confirmButtonText: 'Ok',
+              }).then((res) => {
+                location.reload();
+              });
+            } else {
+              Swal.fire({
+                title: 'Erro',
+                text: 'Ocorreu um erro ao enviar a mensagem, tente novamente mais tarde.',
+                icon: 'error',
+                // timer: 3000,
+                // showProgressBar: true,
+                confirmButtonText: 'Ok',
+              }).then((res) => {
+                location.reload();
+              });
+            }
+          } catch (e) {
+            console.log(e);
+            Swal.fire({
+              title: 'Erro',
+              text: 'Ocorreu um erro ao enviar a mensagem, tente novamente mais tarde.',
+              icon: 'error',
+              // timer: 3000,
+              // showProgressBar: true,
+              confirmButtonText: 'Ok',
+            }).then((res) => {
+              location.reload();
+            });
+          }
+        },
+      });
+    });
+
+    const $input = document.querySelector('.phone-mask');
+    $input.addEventListener('input', handleInput, false);
+
+    function handleInput(e) {
+      e.target.value = phoneMask(e.target.value);
+    }
+
+    function phoneMask(phone) {
+      return phone
+        .replace(/\D/g, '')
+        .replace(/^(\d)/, '($1')
+        .replace(/^(\(\d{2})(\d)/, '$1) $2')
+        .replace(/(\d{4})(\d{1,5})/, '$1-$2')
+        .replace(/(-\d{5})\d+?$/, '$1');
+    }
+  }
 };
