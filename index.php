@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./assets/glidejs/glide.core.min.css">
     <link rel="stylesheet" href="./assets/photoswipe/photoswipe.css">
     <link rel="stylesheet" href="./assets/glidejs/glide.theme.min.css">
+    <link rel="stylesheet" href="./assets/lity/lity.min.css">
     <link rel="stylesheet" href="style.css">
 
 
@@ -30,7 +31,17 @@
     <script defer src="./assets/jquery.min.js"></script>
     <script defer src="./assets/lax.min.js"></script>
     <script defer src="./assets/glidejs/glide.min.js"></script>
+    <script defer src="./assets/lity/lity.min.js"></script>
     <script defer src="script.js" type="module"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBE0R83WT7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SBE0R83WT7');
+</script>
   </head>
   <!--<header>
     <div>
@@ -86,12 +97,12 @@
       <div class="container">
         <nav class="navigation">
           <ul class="nav-menu" role="tablist" id="navbar-sticky">
-            <li class="nav-item"><a href="#about">Sobre o STO</a></li>
-            <li class="nav-item"><a href="#exterior-360-view">360° Exterior</a></li>
-            <li class="nav-item"><a href="#interior-360-view">360° Interior</a></li>
+            <li class="nav-item"><a class="scroll__link" href="#about">Sobre o STO</a></li>
+            <li class="nav-item"><a class="scroll__link" href="#exterior-360-view">360° Exterior</a></li>
+            <li class="nav-item"><a class="scroll__link" href="#interior-360-view">360° Interior</a></li>
             <li class="nav-item"><a class="technical__data--open">Dados Técnicos</a></li>
-            <li class="nav-item"><a href="#gallery">Galeria</a></li>
-            <li class="nav-item"><a href="#contact">Contato</a></li>
+            <li class="nav-item"><a class="scroll__link" href="#gallery">Galeria</a></li>
+            <li class="nav-item"><a class="scroll__link" href="#contact">Contato</a></li>
             <span id="scroll__spy--underline"></span>
           </ul>
         </nav>
@@ -109,21 +120,21 @@
                       width="100%" class="about__img">
                   </a>
                 </figure> -->
-              <iframe src="https://www.youtube.com/embed/JxnLn2Zw15M?si=zta41Ob6l6_7fHYS" frameborder="0" scrolling="no" allowfullscreen></iframe> 
+              <iframe src="https://www.youtube.com/embed/JxnLn2Zw15M" frameborder="0" scrolling="no" allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-12 col-lg-4">
             <div class="about__content py-4">
               <h1 class="about__content--title">Lamborghini STO</h1>
               <p>O Huracan STO - que significa em italiano <b>Super Trofeo Omologata</b>, ou homologação - é essencialmente projetado para ser uma versão de estrada do carro de corrida Huracan Super Trofeo Evo da Lamborghini, trazendo grandes emoções e uma olhar que vai virar a cabeça onde quer que você vá.</p>
-              <button class="btn btn_01">
+              <a class="scroll__link btn btn_01" href="#contact">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>
                 Conhecer agora
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -180,15 +191,17 @@
         <h2 class="section__title">360° Exterior</h2>
       </div>
       <div class="iframe__wrapper">
-        <iframe src="https://loungegaragem.com.br/" frameborder="0" scrolling="no"></iframe>
+        <figure>
+          <img src="./public/banner-2.jpg" alt="Imagem 360 Exterior">
+        </figure>
         <div class="iframe__shield">
-          <button>
+          <a href="https://esportivosdeluxo.com.br/teste/rot/" data-lity>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -229,15 +242,15 @@
         <h2 class="section__title">360° Interior</h2>
       </div>
       <div class="iframe__wrapper">
-        <!-- <iframe src="https://loungegaragem.com.br/" frameborder="0" scrolling="no"></iframe> -->
+        <iframe src="https://esportivosdeluxo.com.br/teste/interno/" frameborder="0" scrolling="no"></iframe>
         <div class="iframe__shield">
-          <button>
+          <a href="https://esportivosdeluxo.com.br/teste/interno/" data-lity>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -269,33 +282,33 @@
               <div class="container-fluid p-0">
                 <div class="gallery__grid">
                   <div class="">
-                    <a href="./public/img08.jpg" data-pswp-width="1280" data-pswp-height="768" target="_blank">
-                      <img src="./public/img08.jpg" alt="">
+                    <a href="./public/foto-1.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-1.jpg" alt="">
                     </a>
                   </div>
                   <div class="v-stretch">
-                    <a href="./public/img09.webp" data-pswp-width="1024" data-pswp-height="768" target="_blank">
-                      <img src="./public/img09.webp" alt="">
+                    <a href="./public/foto-2.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-2.jpg" alt="">
                     </a>
                   </div>
                   <div class="h-stretch">
-                    <a href="./public/img10.webp" data-pswp-width="924" data-pswp-height="613" target="_blank">
-                      <img src="./public/img10.webp" alt="">
+                    <a href="./public/foto-3.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-3.jpg" alt="">
                     </a>
                   </div>
                   <div class="">
-                    <a href="./public/img11.webp" data-pswp-width="940" data-pswp-height="529" target="_blank">
-                      <img src="./public/img11.webp" alt="">
+                    <a href="./public/foto-4.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-4.jpg" alt="">
                     </a>
                   </div>
                   <div class="">
-                    <a href="./public/img12.jpg" data-pswp-width="1280" data-pswp-height="768" target="_blank">
-                      <img src="./public/img12.jpg" alt="">
+                    <a href="./public/foto-5.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-5.jpg" alt="">
                     </a>
                   </div>
                   <div class="big-stretch">
-                    <a href="./public/img13.jpg" data-pswp-width="1920" data-pswp-height="1080" target="_blank">
-                      <img src="./public/img13.jpg" alt="">
+                    <a href="./public/foto-6.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-6.jpg" alt="">
                     </a>
                   </div>
                 </div>
@@ -305,33 +318,33 @@
               <div class="container-fluid p-0">
                 <div class="gallery__grid">
                   <div class="">
-                    <a href="./public/img08.jpg" data-pswp-width="1280" data-pswp-height="768" target="_blank">
-                      <img src="./public/img08.jpg" alt="">
+                    <a href="./public/foto-7.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-7.jpg" alt="">
                     </a>
                   </div>
                   <div class="v-stretch">
-                    <a href="./public/img09.webp" data-pswp-width="1024" data-pswp-height="768" target="_blank">
-                      <img src="./public/img09.webp" alt="">
+                    <a href="./public/foto-8.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-8.jpg" alt="">
                     </a>
                   </div>
                   <div class="h-stretch">
-                    <a href="./public/img10.webp" data-pswp-width="924" data-pswp-height="613" target="_blank">
-                      <img src="./public/img10.webp" alt="">
+                    <a href="./public/foto-9.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-9.jpg" alt="">
                     </a>
                   </div>
                   <div class="">
-                    <a href="./public/img11.webp" data-pswp-width="940" data-pswp-height="529" target="_blank">
-                      <img src="./public/img11.webp" alt="">
+                    <a href="./public/foto-10.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-10.jpg" alt="">
                     </a>
                   </div>
                   <div class="">
-                    <a href="./public/img12.jpg" data-pswp-width="1280" data-pswp-height="768" target="_blank">
-                      <img src="./public/img12.jpg" alt="">
+                    <a href="./public/foto-11.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-11.jpg" alt="">
                     </a>
                   </div>
                   <div class="big-stretch">
-                    <a href="./public/img13.jpg" data-pswp-width="1920" data-pswp-height="1080" target="_blank">
-                      <img src="./public/img13.jpg" alt="">
+                    <a href="./public/foto-12.jpg" data-pswp-width="900" data-pswp-height="650" target="_blank">
+                      <img src="./public/foto-12.jpg" alt="">
                     </a>
                   </div>
                 </div>
@@ -383,7 +396,7 @@
     </section>
     <?php } ?>
 
-    <section id="cars-carousel">
+  <!--  <section id="cars-carousel">
       <div class="container">
         <h2 class="section__title">Opções Similares</h2>
       </div>
@@ -523,7 +536,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <script type="text/javascript">
       function googleTranslateElementInit() {
@@ -557,6 +570,8 @@
       </div>
     </footer>
 
+<!-- Pop up Datos técnico-->
+
     <section id="technical__data" style="display: none;">
       <button class="technical__data--close">
         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="2" stroke="white"
@@ -566,18 +581,18 @@
       </button>
       <div class="technical__data--header">
         <div class="container">
-          <h2>Macan</h2>
+          <h2>Lamborghini Huracan STO</h2>
           <div class="technical__data--header__data">
             <div>
-              <h3>195kW/265 cv</h3>
+              <h3>472kW/639 cv</h3>
               <p>Potência (kW)/Potencia (cv)</p>
             </div>
             <div>
-              <h3>6,4 s</h3>
+              <h3>3 s</h3>
               <p>Aceleração 0 - 100 km/h</p>
             </div>
             <div>
-              <h3>232 km/h</h3>
+              <h3>310 km/h</h3>
               <p>Velocidade máxima</p>
             </div>
           </div>
@@ -609,45 +624,45 @@
                             </thead>
                             <tbody>
                               <tr>
-                                <td scope="row">Número de cilindros</td>
-                                <td class="collum2">4</td>
+                                <td scope="row">Motor</td>
+                                <td class="collum2">V10, 90°, MPI + DSI</td>
                               </tr>
                               <tr>
                                 <td scope="row">Diâmetro</td>
-                                <td class="collum2">82,5 mm</td>
+                                <td class="collum2">84.5 mm</td>
                               </tr>
                               <tr>
                                 <td scope="row">Curso</td>
-                                <td class="collum2">92,8 mm</td>
+                                <td class="collum2">92.8 mm</td>
                               </tr>
                               <tr>
                                 <td scope="row">Cilindrada</td>
-                                <td class="collum2">1.984 cm³</td>
+                                <td class="collum2">5.204 cm³</td>
                               </tr>
                               <tr>
                                 <td scope="row">Potência (kW)</td>
-                                <td class="collum2">195 kW</td>
+                                <td class="collum2">470 kW</td>
                               </tr>
                               <tr>
                                 <td scope="row">Potência (cv)</td>
-                                <td class="collum2">265cv</td>
+                                <td class="collum2">639cv</td>
                               </tr>
                               <tr>
                                 <td scope="row">Rotação máxima do motor</td>
-                                <td class="collum2">6.800 1/min</td>
+                                <td class="collum2">8.000 rpm</td>
                               </tr>
                               <tr>
                                 <td scope="row">Torque máximo</td>
-                                <td class="collum2">400 Nm</td>
+                                <td class="collum2">565 Nm</td>
                               </tr>
-                              <tr>
+                              <!--<tr>
                                 <td scope="row">Máxima potência por litro (kW/l)</td>
                                 <td class="collum2">98,00 kW/l</td>
                               </tr>
                               <tr>
                                 <td scope="row">Máxima potência por litro (cv/l)</td>
                                 <td class="collum2">133,00 cv/l</td>
-                              </tr>
+                              </tr>-->
                             </tbody>
                           </table>
                         </div>
@@ -669,27 +684,27 @@
                             <tbody>
                               <tr>
                                 <td scope="row">Velocidade máxima</td>
-                                <td class="collum2">232 km/h</td>
+                                <td class="collum2">310 km/h</td>
                               </tr>
                               <tr>
                                 <td scope="row">Aceleração 0 - 100km/h</td>
-                                <td class="collum2">6,4 s</td>
+                                <td class="collum2">3 s</td>
                               </tr>
-                              <tr>
+                              <!--<tr>
                                 <td scope="row">Aceleração 0 - 100 km/h com pacote Sport Chrono</td>
                                 <td class="collum2">6,2 s</td>
+                              </tr>-->
+                              <tr>
+                                <td scope="row">Aceleração 0 - 200km/h</td>
+                                <td class="collum2">9 s</td>
                               </tr>
                               <tr>
-                                <td scope="row">Aceleração 0 - 160km/h</td>
-                                <td class="collum2">16,3 s</td>
+                                <td scope="row">Frenagem de 100 a 0 km/h</td>
+                                <td class="collum2">30 m</td>
                               </tr>
                               <tr>
-                                <td scope="row">Aceleração 0 - 160km/h com Pacote Sport Chrono</td>
-                                <td class="collum2">16,1 s</td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Aceleração em marcha (80 - 120 km/h)</td>
-                                <td class="collum2">4,5 s</td>
+                                <td scope="row">Frenagem de 200 a 0 km/h</td>
+                                <td class="collum2">110 m</td>
                               </tr>
                             </tbody>
                           </table>
@@ -702,7 +717,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseThree">
-                        Características de terreno
+                        Rodas e Pneus
                       </button>
                     </h2>
                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
@@ -711,25 +726,21 @@
                           <table class="table">
                             <tbody>
                               <tr>
-                                <td scope="row">Dintância máxima entre oslo e componentes sensíveis à água (suspenção de
-                                  aço)
-                                </td>
-                                <td class="collum2">300mm</td>
+                                <td scope="row">Rodas Diantenrias (Jantes)</td>
+                                <td class="collum2">8,5 x 20 J/ARO</td>
                               </tr>
                               <tr>
-                                <td scope="row">Ângulo de saída - suspensão de aço</td>
-                                <td class="collum2">16,7°</td>
+                                <td scope="row">Rodas Traseiras (Jantes)</td>
+                                <td class="collum2">11 x 20 J/ARO</td>
                               </tr>
                               <tr>
-                                <td scope="row">Máxima distância livre do solo - suspenção de aço</td>
-                                <td class="collum2">202 mm</td>
+                                <td scope="row">Pneus Diantenrios</td>
+                                <td class="collum2">Sport 245/30 R20</td>
                               </tr>
                               <tr>
-                                <td scope="row">Máxima distância livre do solo - suspenção a ar (altura em nível Normal)
-                                </td>
-                                <td class="collum2">187 mm</td>
+                                <td scope="row">Pneus Traseiros</td>
+                                <td class="collum2">Sport 305/30 R20</td>
                               </tr>
-
                             </tbody>
                           </table>
                         </div>
@@ -741,7 +752,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseFour">
-                        Carroceria
+                        Direção, Suspenção e Freios
                       </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
@@ -750,56 +761,24 @@
                           <table class="table">
                             <tbody>
                               <tr>
-                                <td scope="row">Comprimento</td>
-                                <td class="collum2">4.726 mm</td>
+                                <td scope="row">Sistema de Controle</td>
+                                <td class="collum2">Controle Eletrônico de Estabilidade (integrando ABS e TCS)</td>
                               </tr>
                               <tr>
-                                <td scope="row">Largura</td>
-                                <td class="collum2">1.922 mm</td>
+                                <td scope="row">Tipos de Suspenção</td>
+                                <td class="collum2">Suspensão magneto-reológica</td>
                               </tr>
                               <tr>
-                                <td scope="row">Largura (com retrovisore)</td>
-                                <td class="collum2">2.097mm</td>
+                                <td scope="row">Sistema de Direção</td>
+                                <td class="collum2">Direção assistida eletromecânica (EPS)</td>
                               </tr>
                               <tr>
-                                <td scope="row">Altura</td>
-                                <td class="collum2">1.621 mm</td>
+                                <td scope="row">Freios Dianteiros</td>
+                                <td class="collum2">Carbono cerâmicos Ventilados, Tipo: CCM-R, Diâmetro: 390, Espessura: 34</td>
                               </tr>
                               <tr>
-                                <td scope="row">Entre-eixos</td>
-                                <td class="collum2">2.807 mm</td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Diâmetro de viragem</td>
-                                <td class="collum2">12,0 m</td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Peso (DIN)</td>
-                                <td class="collum2">1.845 kg</td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Peso (EU)</td>
-                                <td class="collum2">1920 kg</td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Peso bruto permitido</td>
-                                <td class="collum2">2.510 kg</td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Carga máxima</td>
-                                <td class="collum2">665 kg</td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Máxima carga de reboque (travado)</td>
-                                <td class="collum2">2000 kg</td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Máxima carga de reboque (destravado)</td>
-                                <td class="collum2">750 kg</td>
-                              </tr>
-                              <tr>
-                                <td scope="row">Carga máxima admissível no teto com o sistema de transporte Porsche</td>
-                                <td class="collum2">75 kg</td>
+                                <td scope="row">Freios Traseiros</td>
+                                <td class="collum2">Carbono cerâmicos Ventilados, Tipo: CCM-R, Diâmetro: 360, Espessura: 28</td>
                               </tr>
                             </tbody>
                           </table>
@@ -812,7 +791,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseFive">
-                        Capacidades
+                        Transmissão, Corpo e Chassis
                       </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
@@ -821,22 +800,114 @@
                           <table class="table">
                             <tbody>
                               <tr>
-                                <td scope="row">Volume do bagageiro aberto (atrás dos bancos dianteiros)</td>
-                                <td class="collum2">954 l</td>
+                                <td scope="row">Transmição</td>
+                                <td class="collum2">Traseira</td>
                               </tr>
                               <tr>
-                                <td scope="row">Volume do bagageiro aberto ( até ao contorno superior dos bancos
-                                  traseiros)
-                                </td>
-                                <td class="collum2">488 l</td>
+                                <td scope="row">Tração</td>
+                                <td class="collum2">AWD</td>
                               </tr>
                               <tr>
-                                <td scope="row">Maior volume do bagageiro (atrás dos bancos dianteiros, até o teto)</td>
-                                <td class="collum2">1.503 l</td>
+                                <td scope="row">Largura</td>
+                                <td class="collum2">1.922 mm</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Câmbio</td>
+                                <td class="collum2">Automático LDF com 7 velocidades</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Segurança</td>
+                                <td class="collum2">Airbags</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Chassis</td>
+                                <td class="collum2">Híbrido em alumínio e fibra de carbono</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Corpo</td>
+                                <td class="collum2">Alumínio e material sintético</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Espelhos</td>
+                                <td class="collum2">Eletrico, aquecido e dobrável</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Aerodinâmica</td>
+                                <td class="collum2">Splitter dianteiro e asa traseira com 3 regulagens manuais</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSix">
+                        Carroceria
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td scope="row">Comprimento</td>
+                                <td class="collum2">4.547 mm</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Largura (sem retrovisor)</td>
+                                <td class="collum2">1.945 mm</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Largura (com retrovisor)</td>
+                                <td class="collum2">2.236 mm</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Altura</td>
+                                <td class="collum2">1.220 mm</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Entre-eixos</td>
+                                <td class="collum2">2.620 mm</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Peso Seco</td>
+                                <td class="collum2">1.339 kg</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Distribuição de Peso</td>
+                                <td class="collum2">% 41/59</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSeven">
+                        Autonomia 
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td scope="row">Consumo</td>
+                                <td class="collum2">0,40 km/l</td>
                               </tr>
                               <tr>
                                 <td scope="row">Tanque de combustível</td>
-                                <td class="collum2">75 l</td>
+                                <td class="collum2">83 l</td>
                               </tr>
                             </tbody>
                           </table>
@@ -853,7 +924,7 @@
                     <h2 class="accordion-header" id="headingOne">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Powertrain, chassis e desempenho
+                        Design Interior
                       </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -861,36 +932,50 @@
                       <div class="accordion-body">
                         <div class="table-responsive">
                           <table class="table">
-
                             <tbody>
                               <tr>
-                                <td scope="row">Freio de estacionamento acionado eletricamente e função Hold automática
-                                </td>
+                                <td scope="row">Composição Banco</td>
+                                <td class="collum2">Alcantra Esportivo Bicolor</td>
                               </tr>
                               <tr>
-                                <td scope="row">Sistema de freio antitravamento (ABS), sistema de estabilidade do
-                                  veículo
-                                  Porsche
-                                  Stability Management (PSM) com ABS, ASR, ABD, MSR e gestão da estabilidade do reboque
-                                  e
-                                  Porsche
-                                  Hill Control (PHC)</td>
+                                <td scope="row">Cor Banco</td>
+                                <td class="collum2">Bianco Leda com costura invertida</td>
                               </tr>
                               <tr>
-                                <td>Porsche Traction Management (PTM): tração ativa nas quatro rodas com embreagem
-                                  multidisco
-                                  eletronicamente variável, controlada por mapa, diferencial de freio automático (ABD) e
-                                  regulação
-                                  antiderrapante (ASR), com função Auto Start-Stop até 3 km/h
-                                </td>
+                                <td scope="row">Tipo Banco</td>
+                                <td class="collum2">Esportivo</td>
                               </tr>
                               <tr>
-                                <td>Botão Off-road</td>
+                                <td scope="row">Tipo Cinto</td>
+                                <td class="collum2">Comum</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Cor Cinto</td>
+                                <td class="collum2">Grigio Sirius</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Cor Cinto</td>
+                                <td class="collum2">Grigio Sirius</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Tapete</td>
+                                <td class="collum2">Fibra de Carbono</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Costura Volante</td>
+                                <td class="collum2">Bianco Leda</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Tela</td>
+                                <td class="collum2">Sitema de Telemetria</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Detalhes painel</td>
+                                <td class="collum2">Dark Chrome e Carbon Twill</td>
                               </tr>
                             </tbody>
                           </table>
                         </div>
-
                       </div>
                     </div>
                   </div>
@@ -908,14 +993,28 @@
                           <table class="table">
                             <tbody>
                               <tr>
-                                <td>Carroceria totalmente galvanizada, monobloco, com quatro portas com proteção lateral
-                                  integrada,
-                                  para-choques compostos por travessas de alta resistência
-                                  e dois elementos de deformação, cada um com dois pontos de fixação roscados para olhal
-                                  de
-                                  reboque
-                                  contido
-                                </td>
+                                <td scope="row">Pintura</td>
+                                <td class="collum2">Blue Cepheus</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Cor de Constraste</td>
+                                <td class="collum2">Arancio Xanto</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Tipo Rodas</td>
+                                <td class="collum2">Monobloco Forjado de Aluminio</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Cor Rodas</td>
+                                <td class="collum2">Matt Black</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Calota Central</td>
+                                <td class="collum2">Preta</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Pinças de Freio</td>
+                                <td class="collum2">Laranja</td>
                               </tr>
                             </tbody>
                           </table>
@@ -927,7 +1026,7 @@
                     <h2 class="accordion-header" id="headingOne">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        Luzes & visibilidade
+                        Acessórios
                       </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -938,60 +1037,28 @@
                             <tbody>
 
                               <tr>
-                                <td>Ativação automática dos faróis incl. Iluminação "Welcome Home"</td>
+                                <td>Lifting system</td>
                               </tr>
                               <tr>
-                                <td>Sistema de limpa-vidros dianteiro com 2 velocidades, limpeza intermitente e sensor
-                                  de
-                                  chuva,
-                                  limpador de vidro traseiro
-                                  com limpeza intermitente e jato de lavagem</td>
+                                <td>Escrita Lamborghini STO no painel</td>
                               </tr>
                               <tr>
-                                <td>Conceito de iluminação interior: porta-luvas, ignição, focos de leitura para
-                                  condutor e
-                                  passageiro da frente,
-                                  luzes de leitura traseiras esquerda e direita, bagageiro</td>
+                                <td>Proteção externa para retrovisores em fibra de carbono Mate</td>
+                              </tr>
+                              <tr>
+                                <td>Controle de Viagem</td>
+                              </tr>
+                              <tr>
+                                <td>Camera de Ré</td>
+                              </tr>
+                              <tr>
+                                <td>Sistema Anti roubo</td>
+                              </tr>
+                              <tr>
+                                <td>Luzes de porta com a logo STO</td>
                               </tr>
                             </tbody>
                           </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                        Design interior
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="table-responsive">
-                          <table class="table">
-                            <tbody>
-                              <tr>
-                                <td>Porta-garrafas nos painéis das portas dianteiras e traseiras,dois porta-copos de
-                                  diâmetro
-                                  variável na frente, gancho para roupas em ambos os pilares B,
-                                  cobertura fixa e removível do porta-malas
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>Cluster integrado de três instrumentos redondos, painel de instrumentos com display
-                                  colorido
-                                  de alta resolução de 4,8 polegadas,
-                                  indicador de marcha para PDK, display de intervalo de serviço, indicador de
-                                  temperatura
-                                  externa e medidor de combustível
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-
                         </div>
                       </div>
                     </div>
@@ -1002,7 +1069,7 @@
             <div class="col-12 col-lg-5 d-none d-lg-block">
               <div class="technical__data--figure--wrapper">
                 <figure class="technical__data--figure">
-                  <img src="./public/macan-skeleton.svg" alt="Esqueleto Macan">
+                  <img src="./public/tracos-1.jpg" alt="Esqueleto Macan">
                 </figure>
               </div>
             </div>

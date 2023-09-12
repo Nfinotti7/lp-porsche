@@ -1,6 +1,17 @@
 import PhotoSwipeLightbox from './assets/photoswipe/photoswipe-lightbox.esm.min.js';
 
 window.onload = function () {
+  $(document).on('click', '.scroll__link', function (e) {
+    e.preventDefault();
+    const href = $(this).attr('href');
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top - 80,
+      },
+      250
+    );
+  });
+
   if ($('#navbar-sticky').length > 0) {
     const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]');
     firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
@@ -132,12 +143,12 @@ window.onload = function () {
   }, 500);
 
   if ($('#gallery').length > 0) {
-    const lightbox = new PhotoSwipeLightbox({
+    const galleryLightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
       children: 'a',
       pswpModule: () => import('./assets/photoswipe/photoswipe.esm.min.js'),
     });
-    lightbox.init();
+    galleryLightbox.init();
   }
 
   if ($('#btn__send--form').length > 0) {
@@ -230,3 +241,40 @@ window.onload = function () {
     }
   }
 };
+
+// if ($('.seccion').length > 0) {
+const imagenes = [
+  './public/img01.jpg',
+  './public/img02.jpg',
+  './public/img03.jpg',
+  './public/img04.jpg',
+  './public/img05.jpg',
+  './public/img06.jpg',
+  './public/img07.jpg',
+  './public/img08.jpg',
+];
+const imagenWrapper = document.querySelector('.imagenWrapper');
+const imagenPreview = document.getElementById('imagenPreview');
+const range = document.getElementById('imgRange');
+const imagenTags = [];
+imagenWrapper.classList.add('cargando'); //Se agrega el loader al iniciar
+
+window.addEventListener('load', () => {
+  let imgLoaded = 0; //Acumulador que nos va a servir para saber cuando se cargan todas las imagenes
+  imagenes.map((imgSrc, index) => {
+    if (index == 0) imagenPreview.setAttribute('src', imgSrc); //Renderizamos la primer imagen
+    const imagen = new Image(); //Creamos el elemento imagen. Esto nos sirve para no hacer un nuevo request cada que cambia el valor del range
+    imagen.setAttribute('src', imgSrc);
+    imagen.addEventListener('load', () => {
+      imgLoaded++; //Aumentamos el incrementador cuando cada imagen sea cargada
+      imagenTags[index] = imagen;
+      if (imgLoaded == imagenes.length) imagenWrapper.classList.remove('cargando'); //Se remueve el loader cuando todas las imagenes estan cargadas
+    });
+  });
+  range.addEventListener('input', () => {
+    console.log(range.value);
+    let val = range.value;
+    imagenPreview.setAttribute('src', imagenTags[val - 1].getAttribute('src')); //Obtenemos el src de las tags previamente creadas y se lo pasamos al preview para que lo renderize
+  });
+});
+// }

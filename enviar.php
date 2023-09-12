@@ -34,8 +34,7 @@ try {
 
     //Recipients
     $mail->setFrom('contatogo@esportivosdeluxo.com.br', 'Atendimento Landing Page');
-    $mail->addAddress('dovefi3473@cohodl.com');     //Add a recipient
-    $mail->addAddress('jf.ribeiro7@gmail.com');     //Add a recipient
+    $mail->addAddress('recebimento-total@esportivosdeluxo.com.br');     //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
