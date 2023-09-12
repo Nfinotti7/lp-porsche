@@ -242,7 +242,9 @@
         <h2 class="section__title">360° Interior</h2>
       </div>
       <div class="iframe__wrapper">
-        <iframe src="https://esportivosdeluxo.com.br/teste/interno/" frameborder="0" scrolling="no"></iframe>
+        <figure>
+          <img src="./public/foto-4.jpg" alt="Imagem 360 Exterior">
+        </figure>
         <div class="iframe__shield">
           <a href="https://esportivosdeluxo.com.br/teste/interno/" data-lity>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
