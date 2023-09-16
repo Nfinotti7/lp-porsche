@@ -1,6 +1,5 @@
 import PhotoSwipeLightbox from "./assets/photoswipe/photoswipe-lightbox.esm.min.js";
 
-
 window.onload = function () {
   $(document).on("click", ".scroll__link", function (e) {
     e.preventDefault();
@@ -282,19 +281,4 @@ window.addEventListener("load", () => {
     let val = range.value;
     imagenPreview.setAttribute("src", imagenTags[val - 1].getAttribute("src")); //Obtenemos el src de las tags previamente creadas y se lo pasamos al preview para que lo renderize
   });
-});
-// }
-
-var $catalogoBody = $(".catalogo-bd").isotope({
-  // options
-  itemSelector: ".ctlg-car",
-  layoutMode: "fitRows"
-})
-  $('.btn-section .button').on('click',function(){
-  $('.btn-section .button') removeClass('.active');
-  $(this).addClass('.active');
-  var value = $(this).attr('data-filter');
-  $catalogoBody.isotope({
-    filter: value
-  })
 });

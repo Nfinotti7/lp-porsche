@@ -4,7 +4,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
 }
-#catalogo-bd .btn-section {
+#catalogo-bd .sorts {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@ body {
   height: 80px;
   margin-bottom: 2rem;
 }
-#catalogo-bd .btn-section .button {
+#catalogo-bd .sorts .button {
   padding: 5px 30px;
   margin: 4px;
   background-color: rgb(197, 197, 197);
@@ -24,17 +24,17 @@ body {
   cursor: pointer;
   transition: all 0.4s;
 }
-#catalogo-bd .btn-section .button.active {
+#catalogo-bd .sorts .button.active {
   background: red;
   color: white;
 }
 
-#catalogo-bd .btn-section .button:hover {
+#catalogo-bd .sorts .button:hover {
   background: red;
   color: white;
 }
 
-#catalogo-bd .container {
+#catalogo-bd .container .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   box-sizing: border-box;
@@ -43,7 +43,7 @@ body {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-#catalogo-bd .container .ctlg-car {
+#catalogo-bd .container .grid .box-item {
   background: yellow;
   width: 350px;
   height: 300px;
@@ -52,30 +52,30 @@ body {
   position: relative;
 }
 
-#catalogo-bd .ctlg-car img {
+#catalogo-bd .grid .box-item img {
   width: 100%;
   height: 200px;
 }
 
-#catalogo-bd .ctlg-car:hover {
+#catalogo-bd .grid .box-item:hover {
   transform: scale(1.03);
 }
 
-#catalogo-bd .ctlg-car h3 {
+#catalogo-bd .grid .box-item h3 {
   padding: 2px;
   margin: 0px 0px 2px 2px;
   text-align: center;
   font-size: 25px;
 }
 
-#catalogo-bd .ctlg-car p {
+#catalogo-bd .grid .box-item p {
   padding: 2px;
   margin: 0px 0px 2px 2px;
   text-align: center;
   font-size: 15px;
 }
 
-#catalogo-bd .ctlg-car .overlay {
+#catalogo-bd .grid .box-item .overlay {
   width: 100%;
   height: 100%;
   top: 0;
@@ -89,12 +89,12 @@ body {
   opacity: 0;
 }
 
-#catalogo-bd .ctlg-car:hover .overlay {
+#catalogo-bd .grid .box-item:hover .overlay {
   background-color: #000;
   opacity: 0.5;
 }
 
-.overlay a {
+.grid .overlay a {
   display: inline-block;
   padding: 8px 16px;
   border: 2px solid #ffffff;
@@ -105,7 +105,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.overlay a:hover {
+.grid .overlay a:hover {
   background-color: #ffffff;
   color: #000;
 }
