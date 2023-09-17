@@ -21,17 +21,18 @@
      <link rel="stylesheet" href="./assets/photoswipe/photoswipe.css" />
      <link rel="stylesheet" href="./assets/glidejs/glide.theme.min.css" />
      <link rel="stylesheet" href="./assets/lity/lity.min.css" />
+     <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="style-catalogo.css" />
 
-     <script defer src="./assets/jquery.min.js"></script>
      <script defer src="https://www.google.com/recaptcha/api.js"></script>
      <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
      <script defer src="./assets/bootstrap/js/bootstrap.min.js"></script>
+     <script defer src="./assets/jquery.min.js"></script>
      <script defer src="./assets/lax.min.js"></script>
      <script defer src="./assets/glidejs/glide.min.js"></script>
      <script defer src="./assets/lity/lity.min.js"></script>
-     <script src="./node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+     <script defer src="./assets/isotope.min.js"></script>
      <script defer src="script-ctlg.js" type="module"></script>
      <!-- Google tag (gtag.js) -->
      <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBE0R83WT7"></script>
@@ -48,7 +49,7 @@
  </head>
  <header class="hdr-catalogo">
      <div>
-         <a href="#banner" class="logo">ESPORTIVOS DE LUXO
+         <a href="./index.php" class="logo">ESPORTIVOS DE LUXO
              <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4500 300">
                 <title>Porsche</title>
                 <path
@@ -100,8 +101,8 @@
                  <ul class="nav-menu">
                      <li class="nav-item">Home</li>
                  </ul>
-                 <h5>BUSCAR POR TERMOS:</h5><input type="text" id="searchbar" name="searchbar"
-                     placeholder="MARCA, MODELO, ANO" onkeyup="search()">
+                 <h5>BUSCAR POR TERMOS:</h5><input type="search" id="searchbar" name="searchbar"
+                     placeholder="MARCA, MODELO, ANO">
              </nav>
          </div>
      </section>
@@ -111,10 +112,10 @@
              <button class="button active" data-sort-by="marca">Marca</button>
              <button class="button" data-sort-by="year">Ano</button>
              <button class="button" data-sort-by="preco">Maior valor</button>
-             <button class="button" data-sort-by="original-order">Ordem original</button>
+             <button class="button" data-sort-by="menorvalor">Menor valor</button>
          </div>
          <div class="container">
-             <div class="grid">
+             <div class="ctlg-card">
                  <div class="box-item" data-category="lambo">
                      <figure><img src="./public/imglamb.jpg" alt=""></figure>
                      <h3 class="marca">LAMBORGHINI AVENTADOR</h3>
@@ -201,6 +202,26 @@
 
 
      </section>
+
+     <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <div>
+                        <label for="google__translate--select">Alterar Idioma</label>
+                        <div id="google__translate"></div>
+                    </div>
+                    <div>
+                        <a href="./politica-de-privacidade.html">Política de Privacidade</a>
+                    </div>
+                </div>
+                <div class="footer__bottom w-100">
+                    <p>&copy; 2023 Rotas Motors. Todos os direitos reservados.</p>
+                    <p>Desenvolvido por Rotas Motors</p>
+                </div>
+            </div>
+        </div>
+    </footer>
  </body>
 
  </html>
