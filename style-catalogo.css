@@ -139,3 +139,35 @@ body {
   background-color: #ffffff;
   color: #000;
 }
+
+/* Estilos para telas menores que 950px */
+@media (max-width: 950px) {
+  .sticky-menu {
+    height: 200px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sticky-menu .nav-menu .nav-item a {
+    font-size: 24px;
+  }
+
+  .sticky-menu .search-item h5 {
+    font-size: 24px;
+    margin: 5px;
+  }
+  .sticky-menu .search-item #searchbar {
+    display: flex;
+    box-sizing: border-box;
+    margin: 3px;
+    width: 195px;
+    height: 80px;
+  }
+
+  .sorts {
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+}
