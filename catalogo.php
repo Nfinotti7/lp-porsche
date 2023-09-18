@@ -70,24 +70,20 @@
              <div class="d-flex align-items-center justify-content-center">
                  <h2 class="section__title">Lamborghini Huracan STO</h2>
              </div>
-             <?php if($isSold){ ?>
-             <div class="item__sold--title">
-                 <h2>VENDIDO</h2>
-             </div>
-             <?php } ?>
+
              <div class="container">
                  <div class="banner__content--texts">
                      <div class="row">
                          <div class="col-6 col-md-6 col-lg-4">
-                             <h3 class="marca"></h3>472kW/639 cv</h3>
+                             <h3 class="brand"></h3>472kW/639 cv</h3>
                              <p>Potência (kW)/Potencia (cv)</p>
                          </div>
                          <div class="col-6 col-md-6 col-lg-4">
-                             <h3 class="marca"></h3>3 s</h3>
+                             <h3 class="brand"></h3>3 s</h3>
                              <p>Aceleração 0 - 100 km/h</p>
                          </div>
                          <div class="col-6 col-md-6 col-lg-4">
-                             <h3 class="marca"></h3>310 km/h</h3>
+                             <h3 class="brand"></h3>310 km/h</h3>
                              <p>Velocidade máxima</p>
                          </div>
                      </div>
@@ -99,102 +95,104 @@
          <div class="container">
              <nav class="navigation">
                  <ul class="nav-menu">
-                     <li class="nav-item">Home</li>
+                     <li class="nav-item"><a href="">Home</a></li>
+                     <li class="search-item">
+                         <h5>BUSCAR POR TERMOS:</h5>
+                         <input type="search" id="searchbar" name="searchbar" placeholder="MARCA, MODELO, ANO">
+                     </li>
                  </ul>
-                 <h5>BUSCAR POR TERMOS:</h5><input type="search" id="searchbar" name="searchbar"
-                     placeholder="MARCA, MODELO, ANO">
              </nav>
          </div>
      </section>
 
      <section id="catalogo-bd">
          <div class="sorts" class="button-group" id="sorts">
-             <button class="button active" data-sort-by="marca">Marca</button>
+             <button class="button active" data-sort-by="brand">Marca</button>
              <button class="button" data-sort-by="year">Ano</button>
-             <button class="button" data-sort-by="preco">Maior valor</button>
+             <button class="button" data-sort-by="price">Maior valor</button>
              <button class="button" data-sort-by="menorvalor">Menor valor</button>
          </div>
          <div class="container">
-             <div class="ctlg-card">
+             <div class="ctlg-card ">
                  <div class="box-item" data-category="lambo">
                      <figure><img src="./public/imglamb.jpg" alt=""></figure>
-                     <h3 class="marca">LAMBORGHINI AVENTADOR</h3>
+                     <h3 class="brand">LAMBORGHINI AVENTADOR</h3>
                      <p class="year">Ano: 2022</p>
-                     <p class="preco">Valor: R$950.000</p>
+                     <p class="price">Valor: R$950.000</p>
                      <div class="overlay">
-                         <a href="#">Saiba mais</a>
+                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
                      </div>
                  </div>
                  <div class="box-item" data-category="aston">
                      <figure><img src="./public/AMvalhalla.jpg" alt=""></figure>
-                     <h3 class="marca">ASTON MARTIN VALHALLA</h3>
+                     <h3 class="brand">ASTON MARTIN VALHALLA</h3>
                      <p class="year">Ano: 2021</p>
-                     <p class="preco">Valor: R$500.000</p>
+                     <p class="price">Valor: R$500.000</p>
                      <div class="overlay">
-                         <a href="#">Saiba mais</a>
+                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
                      </div>
                  </div>
                  <div class="box-item" data-category="ferra">
                      <figure><img src="./public/FRRroma.jpg" alt=""></figure>
-                     <h3 class="marca">FERRARI ROMA</h3>
+                     <h3 class="brand">FERRARI ROMA</h3>
                      <p class="year">Ano: 2023</p>
-                     <p class="preco">Valor: R$600.000</p>
+                     <p class="price">Valor: R$600.000</p>
                      <div class="overlay">
-                         <a href="#">Saiba mais</a>
+                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
                      </div>
                  </div>
                  <div class="box-item" data-category="aston">
                      <figure><img src="./public/AMdb12.jpg" alt=""></figure>
-                     <h3 class="marca">ASTON MARTIN DB12</h3>
+                     <h3 class="brand">ASTON MARTIN DB12</h3>
                      <p class="year">Ano: 2020</p>
-                     <p class="preco">Valor: R$950.000</p>
+                     <p class="price">Valor: R$950.000</p>
                      <div class="overlay">
-                         <a href="#">Saiba mais</a>
+                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
                      </div>
                  </div>
                  <div class="box-item" data-category="lambo">
                      <figure><img src="./public/LBurus.webp" alt=""></figure>
-                     <h3 class="marca">LAMBORGHINI URUS</h3>
+                     <h3 class="brand">LAMBORGHINI URUS</h3>
                      <p class="year">Ano: 2019</p>
-                     <p class="preco">Valor: R$400.000</p>
+                     <p class="price">Valor: R$400.000</p>
                      <div class="overlay">
-                         <a href="#">Saiba mais</a>
+                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
                      </div>
                  </div>
                  <div class="box-item" data-category="ferra">
                      <figure><img src="./public/FRRpurosangue.webp" alt=""></figure>
-                     <h3 class="marca">FERRARI PUROSANGUE</h3>
+                     <h3 class="brand">FERRARI PUROSANGUE</h3>
                      <p class="year">Ano: 2020</p>
-                     <p class="preco">Valor: R$800.000</p>
+                     <p class="price">Valor: R$800.000</p>
                      <div class="overlay">
-                         <a href="#">Saiba mais</a>
+                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
                      </div>
                  </div>
                  <div class="box-item" data-category="ferra">
                      <figure><img src="./public/FRRlaferrari.jpg" alt=""></figure>
-                     <h3 class="marca">FERRARI LAFERRARI</h3>
+                     <h3 class="brand">FERRARI LAFERRARI</h3>
                      <p class="year">Ano: 2021</p>
-                     <p class="preco">Valor: R$700.000</p>
+                     <p class="price">Valor: R$700.000</p>
                      <div class="overlay">
-                         <a href="#">Saiba mais</a>
+                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
                      </div>
                  </div>
                  <div class="box-item" data-category="pors">
                      <figure><img src="./public/PRSC911turbos.webp" alt=""></figure>
-                     <h3 class="marca">PORSCHE 911 TURBO S</h3>
+                     <h3 class="brand">PORSCHE 911 TURBO S</h3>
                      <p class="year">Ano: 2022</p>
-                     <p class="preco">Valor: R$300.000</p>
+                     <p class="price">Valor: R$300.000</p>
                      <div class="overlay">
-                         <a href="#">Saiba mais</a>
+                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
                      </div>
                  </div>
                  <div class="box-item" data-category="pors">
                      <figure><img src="./public/PRSCpanamera.webp" alt=""></figure>
-                     <h3 class="marca">PORSCHE PANAMERA</h3>
+                     <h3 class="brand">PORSCHE PANAMERA</h3>
                      <p class="year">Ano: 2017</p>
-                     <p class="preco">Valor: R$400.000</p>
+                     <p class="price">Valor: R$400.000</p>
                      <div class="overlay">
-                         <a href="#">Saiba mais</a>
+                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
                      </div>
                  </div>
              </div>
@@ -202,26 +200,36 @@
 
 
      </section>
-
+     <script type="text/javascript">
+     function googleTranslateElementInit() {
+         new google.translate.TranslateElement({
+                 pageLanguage: 'pt'
+             },
+             'google__translate'
+         );
+     }
+     </script>
+     <script type="text/javascript"
+         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
      <footer>
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__top">
-                    <div>
-                        <label for="google__translate--select">Alterar Idioma</label>
-                        <div id="google__translate"></div>
-                    </div>
-                    <div>
-                        <a href="./politica-de-privacidade.html">Política de Privacidade</a>
-                    </div>
-                </div>
-                <div class="footer__bottom w-100">
-                    <p>&copy; 2023 Rotas Motors. Todos os direitos reservados.</p>
-                    <p>Desenvolvido por Rotas Motors</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+         <div class="container">
+             <div class="footer__wrapper">
+                 <div class="footer__top">
+                     <div>
+                         <label for="google__translate--select">Alterar Idioma</label>
+                         <div id="google__translate"></div>
+                     </div>
+                     <div>
+                         <a href="./politica-de-privacidade.html">Política de Privacidade</a>
+                     </div>
+                 </div>
+                 <div class="footer__bottom w-100">
+                     <p>&copy; 2023 Rotas Motors. Todos os direitos reservados.</p>
+                     <p>Desenvolvido por Rotas Motors</p>
+                 </div>
+             </div>
+         </div>
+     </footer>
  </body>
 
  </html>

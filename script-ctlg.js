@@ -7,21 +7,24 @@ $(document).ready(function () {
       option.classList.add("active");
     });
   });
+
   var $grid = $(".ctlg-card").isotope({
     itemSelector: ".box-item",
     layoutMode: "fitRows",
+
     getSortData: {
-      marca: ".marca",
+      brand: ".brand",
       year: ".year",
-      preco: ".preco",
-      menorvalor: ".preco",
+      price: ".price",
+      menorvalor: ".price",
     },
   });
 
   $grid.isotope({
     sortAscending: {
-      preco: false,
+      price: false,
       menorvalor: true,
+      year: false,
     },
   });
   $("#sorts").on("click", "button", function () {
@@ -33,10 +36,21 @@ $(document).ready(function () {
     $grid.isotope({
       // filter element with numbers greater than 50
       filter: function () {
-        var carName = $(this).find(".marca").text();
+        var carName = $(this).find(".brand").text();
+        var carYear = $(this).find(".year").text();
+        var carPrice = $(this).find(".price").text();
 
         const input = document.getElementById("searchbar").value.toUpperCase();
-        return carName.toUpperCase().indexOf(input) > -1 ? true : false;
+
+        if (
+          carName.toUpperCase().indexOf(input) > -1 ||
+          carYear.toUpperCase().indexOf(input) > -1 ||
+          carPrice.toUpperCase().indexOf(input) > -1
+        ) {
+          return true;
+        } else {
+          return false;
+        }
       },
     });
   });
