@@ -114,103 +114,108 @@
          </div>
          <div class="container">
              <div class="ctlg-card ">
-                 <div class="box-item" data-category="lambo">
-                     <figure><img src="./public/imglamb.jpg" alt=""></figure>
-                     <h3 class="brand">LAMBORGHINI AVENTADOR</h3>
-                     <p class="year">Ano: 2022</p>
-                     <p class="price">Valor: R$950.000</p>
-                     <div class="overlay">
-                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
-                     </div>
-                 </div>
-                 <div class="box-item" data-category="aston">
-                     <figure><img src="./public/AMvalhalla.jpg" alt=""></figure>
-                     <h3 class="brand">ASTON MARTIN VALHALLA</h3>
-                     <p class="year">Ano: 2021</p>
-                     <p class="price">Valor: R$500.000</p>
-                     <div class="overlay">
-                         <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
-                     </div>
-                 </div>
-                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="box-item" data-category="ferra">
-                         <figure><img src="./public/FRRroma.jpg" alt=""></figure>
-                         <h3 class="brand">FERRARI ROMA</h3>
-                         <p class="year">Ano: 2023</p>
-                         <p class="price">Valor: R$600.000</p>
-                         <div class="overlay">
-                             <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                 <div class="row">
+                     <div class="col-12 col-md-6 col-lg-4">
+                         <div class="box-item" data-category="lambo">
+                             <figure><img src="./public/imglamb.jpg" alt=""></figure>
+                             <h3 class="brand">LAMBORGHINI AVENTADOR</h3>
+                             <p class="year">Ano: 2022</p>
+                             <p class="price">Valor: R$950.000</p>
+                             <div class="overlay">
+                                 <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                             </div>
                          </div>
-                     </div>
-                 </div>
-                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="box-item" data-category="aston">
-                         <figure><img src="./public/AMdb12.jpg" alt=""></figure>
-                         <h3 class="brand">ASTON MARTIN DB12</h3>
-                         <p class="year">Ano: 2020</p>
-                         <p class="price">Valor: R$950.000</p>
-                         <div class="overlay">
-                             <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                         <div class="col-12 col-md-6 col-lg-4">
+                             <div class="box-item" data-category="aston">
+                                 <figure><img src="./public/AMvalhalla.jpg" alt=""></figure>
+                                 <h3 class="brand">ASTON MARTIN VALHALLA</h3>
+                                 <p class="year">Ano: 2021</p>
+                                 <p class="price">Valor: R$500.000</p>
+                                 <div class="overlay">
+                                     <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                                 </div>
+                             </div>
                          </div>
-                     </div>
-                 </div>
-                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="box-item" data-category="lambo">
-                         <figure><img src="./public/LBurus.webp" alt=""></figure>
-                         <h3 class="brand">LAMBORGHINI URUS</h3>
-                         <p class="year">Ano: 2019</p>
-                         <p class="price">Valor: R$400.000</p>
-                         <div class="overlay">
-                             <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                         <div class="col-12 col-md-6 col-lg-4">
+                             <div class="box-item" data-category="ferra">
+                                 <figure><img src="./public/FRRroma.jpg" alt=""></figure>
+                                 <h3 class="brand">FERRARI ROMA</h3>
+                                 <p class="year">Ano: 2023</p>
+                                 <p class="price">Valor: R$600.000</p>
+                                 <div class="overlay">
+                                     <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                                 </div>
+                             </div>
                          </div>
-                     </div>
-                 </div>
-                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="box-item" data-category="ferra">
-                         <figure><img src="./public/FRRpurosangue.webp" alt=""></figure>
-                         <h3 class="brand">FERRARI PUROSANGUE</h3>
-                         <p class="year">Ano: 2020</p>
-                         <p class="price">Valor: R$800.000</p>
-                         <div class="overlay">
-                             <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                         <div class="col-12 col-md-6 col-lg-4">
+                             <div class="box-item" data-category="aston">
+                                 <figure><img src="./public/AMdb12.jpg" alt=""></figure>
+                                 <h3 class="brand">ASTON MARTIN DB12</h3>
+                                 <p class="year">Ano: 2020</p>
+                                 <p class="price">Valor: R$950.000</p>
+                                 <div class="overlay">
+                                     <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                                 </div>
+                             </div>
                          </div>
-                     </div>
-                 </div>
-                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="box-item" data-category="ferra">
-                         <figure><img src="./public/FRRlaferrari.jpg" alt=""></figure>
-                         <h3 class="brand">FERRARI LAFERRARI</h3>
-                         <p class="year">Ano: 2021</p>
-                         <p class="price">Valor: R$700.000</p>
-                         <div class="overlay">
-                             <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                         <div class="col-12 col-md-6 col-lg-4">
+                             <div class="box-item" data-category="lambo">
+                                 <figure><img src="./public/LBurus.webp" alt=""></figure>
+                                 <h3 class="brand">LAMBORGHINI URUS</h3>
+                                 <p class="year">Ano: 2019</p>
+                                 <p class="price">Valor: R$400.000</p>
+                                 <div class="overlay">
+                                     <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                                 </div>
+                             </div>
                          </div>
-                     </div>
-                 </div>
-                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="box-item" data-category="pors">
-                         <figure><img src="./public/PRSC911turbos.webp" alt=""></figure>
-                         <h3 class="brand">PORSCHE 911 TURBO S</h3>
-                         <p class="year">Ano: 2022</p>
-                         <p class="price">Valor: R$300.000</p>
-                         <div class="overlay">
-                             <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                         <div class="col-12 col-md-6 col-lg-4">
+                             <div class="box-item" data-category="ferra">
+                                 <figure><img src="./public/FRRpurosangue.webp" alt=""></figure>
+                                 <h3 class="brand">FERRARI PUROSANGUE</h3>
+                                 <p class="year">Ano: 2020</p>
+                                 <p class="price">Valor: R$800.000</p>
+                                 <div class="overlay">
+                                     <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                                 </div>
+                             </div>
                          </div>
-                     </div>
-                 </div>
-                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="box-item" data-category="pors">
-                         <figure><img src="./public/PRSCpanamera.webp" alt=""></figure>
-                         <h3 class="brand">PORSCHE PANAMERA</h3>
-                         <p class="year">Ano: 2017</p>
-                         <p class="price">Valor: R$400.000</p>
-                         <div class="overlay">
-                             <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                         <div class="col-12 col-md-6 col-lg-4">
+                             <div class="box-item" data-category="ferra">
+                                 <figure><img src="./public/FRRlaferrari.jpg" alt=""></figure>
+                                 <h3 class="brand">FERRARI LAFERRARI</h3>
+                                 <p class="year">Ano: 2021</p>
+                                 <p class="price">Valor: R$700.000</p>
+                                 <div class="overlay">
+                                     <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-12 col-md-6 col-lg-4">
+                             <div class="box-item" data-category="pors">
+                                 <figure><img src="./public/PRSC911turbos.webp" alt=""></figure>
+                                 <h3 class="brand">PORSCHE 911 TURBO S</h3>
+                                 <p class="year">Ano: 2022</p>
+                                 <p class="price">Valor: R$300.000</p>
+                                 <div class="overlay">
+                                     <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-12 col-md-6 col-lg-4">
+                             <div class="box-item" data-category="pors">
+                                 <figure><img src="./public/PRSCpanamera.webp" alt=""></figure>
+                                 <h3 class="brand">PORSCHE PANAMERA</h3>
+                                 <p class="year">Ano: 2017</p>
+                                 <p class="price">Valor: R$400.000</p>
+                                 <div class="overlay">
+                                     <a href="https://api.whatsapp.com/send?phone=559999999999">Saiba mais</a>
+                                 </div>
+                             </div>
                          </div>
                      </div>
                  </div>
              </div>
-         </div>
 
 
      </section>

@@ -10,8 +10,10 @@ $(document).ready(function () {
 
   var $grid = $(".ctlg-card").isotope({
     itemSelector: ".box-item",
-    layoutMode: "fitRows",
-
+    masonry: {
+      columnWidth: 100,
+      fitWidth: true,
+    },
     getSortData: {
       brand: ".brand",
       year: ".year",

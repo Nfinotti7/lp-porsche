@@ -63,12 +63,10 @@ body {
 
 #catalogo-bd .container .ctlg-card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  box-sizing: border-box;
-  gap: 10px;
-  justify-content: space-between;
+  width: 100%;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  margin: 0 auto;
 }
 #catalogo-bd .container .ctlg-card .box-item {
   background: #f0f0f0;
@@ -140,8 +138,7 @@ body {
   color: #000;
 }
 
-/* Estilos para telas menores que 950px */
-@media (max-width: 950px) {
+@media (max-width: 720px) {
   .sticky-menu {
     height: 200px;
   }
@@ -170,4 +167,40 @@ body {
     margin-top: 30px;
     flex-wrap: wrap;
   }
+}
+@media (max-width: 422px) {
+  .sticky-menu {
+    height: 200px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sticky-menu .nav-menu .nav-item a {
+    font-size: 24px;
+  }
+
+  .sticky-menu .search-item h5 {
+    font-size: 24px;
+    margin: 5px;
+  }
+  .sticky-menu .search-item #searchbar {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    width: 195px;
+    height: 80px;
+  }
+
+  .sorts {
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  #catalogo-bd .container .ctlg-card {
+    display: grid;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin: 0;
 }
