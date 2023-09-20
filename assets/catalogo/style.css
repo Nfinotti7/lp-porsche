@@ -1,9 +1,3 @@
-body {
-  color: var(--secondary-color);
-  position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
-}
 .hdr-catalogo {
   width: 100%;
   height: 100px;
@@ -16,94 +10,113 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 
 .sticky-menu .navigation .nav-menu .nav-item {
-  font-size: 24px;
+  font-size: var(--fs-2);
   font-weight: bold;
 }
 .sticky-menu .navigation .nav-menu .search-item {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .sticky-menu .navigation .nav-menu .search-item h5 {
-  padding: 5px 20px;
+  margin: 0;
+}
+
+.sticky-menu .navigation .nav-menu .search-item input{
+  border: 1px solid var(--secondary-color);
+  padding: 5px 10px;
+}
+
+#catalogo-bd{
+  padding: 3rem 0;
 }
 
 #catalogo-bd .sorts {
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 80px;
-  margin-bottom: 2rem;
+  gap: 10px;
 }
+
 #catalogo-bd .sorts .button {
   padding: 5px 30px;
-  margin: 4px;
-  background-color: rgb(197, 197, 197);
-  border: none;
-  border-radius: 7px;
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
   cursor: pointer;
-  transition: all 0.4s;
-}
-#catalogo-bd .sorts .button.active {
-  background: red;
-  color: white;
+  transition: all 250ms ease-in-out;
 }
 
+#catalogo-bd .sorts .button.active,
 #catalogo-bd .sorts .button:hover {
-  background: red;
-  color: white;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white);
 }
 
-#catalogo-bd .container .ctlg-card {
-  display: grid;
-  width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin: 0 auto;
-}
-#catalogo-bd .container .ctlg-card .box-item {
-  background: #f0f0f0;
-  width: 350px;
-  height: 330px;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  gap: 15px;
+#catalogo-bd .box-item {
+  background: var(--white);
   transition: 0.5s;
   position: relative;
-  padding: 10px;
-  margin: 10px;
+  /* width: 100%; */
+  height: auto;
+  border: 1px solid var(--secondary-color);
+  margin: .5rem;
 }
 
-#catalogo-bd .ctlg-card .box-item img {
+#catalogo-bd .box-item figure{
+  height: 250px;
   width: 100%;
-  height: 200px;
+  overflow: hidden;
 }
 
-#catalogo-bd .ctlg-card .box-item:hover {
+#catalogo-bd .box-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#catalogo-bd .box-item:hover {
   transform: scale(1.03);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-#catalogo-bd .ctlg-card .box-item h3 {
-  padding: 2px;
-  margin: 0px 0px 2px 2px;
+#catalogo-bd .box-item .box-item--desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+#catalogo-bd .box-item .box-item--desc h3 {
   text-align: center;
-  font-size: 25px;
+  margin-bottom: 10px;
+  font-size: var(--fs-2);
 }
 
-#catalogo-bd .ctlg-card .box-item p {
-  padding: 2px;
-  margin: 0px 0px 2px 2px;
+#catalogo-bd .box-item .box-item--desc p {
   text-align: center;
-  font-size: 15px;
+  font-size: var(--fs-0);
+  margin-bottom: 0;
 }
 
-#catalogo-bd .ctlg-card .box-item .overlay {
+#catalogo-bd .box-item .box-item--desc p:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+#catalogo-bd .box-item .overlay {
   width: 100%;
   height: 100%;
   top: 0;
@@ -113,29 +126,29 @@ body {
   align-items: center;
   position: absolute;
   overflow: hidden;
-  transition: 0.3s ease-in-out;
+  transition: all 250ms ease;
   opacity: 0;
 }
 
-#catalogo-bd .ctlg-card .box-item:hover .overlay {
-  background-color: #000;
-  opacity: 0.5;
+#catalogo-bd .box-item:hover .overlay {
+  background: rgba(0, 0, 0, .5);
+  opacity: 1;
 }
 
 .box-item .overlay a {
   display: inline-block;
   padding: 8px 16px;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid var(--white);
+  color: var(--white);
   text-transform: uppercase;
   font-weight: 800;
   text-decoration: none;
-  transition: 0.3s ease-in-out;
+  transition: all 250ms ease;
 }
 
 .box-item .overlay a:hover {
-  background-color: #ffffff;
-  color: #000;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 @media (max-width: 720px) {
@@ -148,11 +161,11 @@ body {
     align-items: flex-start;
   }
   .sticky-menu .nav-menu .nav-item a {
-    font-size: 24px;
+    font-size: var(--fs-2);
   }
 
   .sticky-menu .search-item h5 {
-    font-size: 24px;
+    font-size: var(--fs-2);
     margin: 5px;
   }
   .sticky-menu .search-item #searchbar {
@@ -178,11 +191,11 @@ body {
     align-items: flex-start;
   }
   .sticky-menu .nav-menu .nav-item a {
-    font-size: 24px;
+    font-size: var(--fs-2);
   }
 
   .sticky-menu .search-item h5 {
-    font-size: 24px;
+    font-size: var(--fs-2);
     margin: 5px;
   }
   .sticky-menu .search-item #searchbar {
@@ -197,7 +210,7 @@ body {
     margin-top: 30px;
     flex-wrap: wrap;
   }
-  #catalogo-bd .container .ctlg-card {
+  #catalogo-bd {
     display: grid;
     width: 100%;
     margin-top: 3rem;

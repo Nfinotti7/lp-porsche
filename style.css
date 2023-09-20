@@ -47,6 +47,8 @@ body {
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 figure {
@@ -85,16 +87,16 @@ p {
   border-color: var(--white);
 }
 
-.btn.btn_01.btn_01-inverted svg > * {
+.btn.btn_01.btn_01-inverted svg>* {
   color: var(--white);
 }
 
-.btn.btn_01 svg > * {
+.btn.btn_01 svg>* {
   transition: all 200ms ease;
 }
 
 .btn.btn_01:hover,
-.btn.btn_01:hover svg > * {
+.btn.btn_01:hover svg>* {
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
@@ -290,7 +292,7 @@ header img {
 }
 
 .view__360--section .iframe__wrapper figure,
-.view__360--section .iframe__wrapper figure img {
+.view__360--section .iframe__wrapper figure img{
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -645,12 +647,6 @@ footer .footer__bottom p {
 
 /* end :: footer */
 
-.grid-item {
-  display: flex;
-  background-color: blue;
-  border: solid 1px var(--white);
-}
-
 /* begin :: tecnicos */
 .accordion-button {
   font-size: 1.4rem;
@@ -764,15 +760,12 @@ footer .footer__bottom p {
   row-gap: 1rem;
 }
 
-#technical__data .technical__data--header .technical__data--header__data > div {
+#technical__data .technical__data--header .technical__data--header__data>div {
   padding: 0 1rem;
   border-left: 1px solid #ddd;
 }
 
-#technical__data
-  .technical__data--header
-  .technical__data--header__data
-  > div:first-child {
+#technical__data .technical__data--header .technical__data--header__data>div:first-child {
   padding-left: 0;
   border-left: 0;
 }
@@ -851,7 +844,8 @@ footer .footer__bottom p {
 }
 
 @media screen and (max-width: 749px) {
-  body * {
+
+  body *{
     scroll-margin-top: 65px !important;
   }
 
@@ -888,6 +882,7 @@ footer .footer__bottom p {
     width: 4rem;
   }
 
+
   #similar__cars--carousel .glide__arrows {
     display: flex;
     align-items: center;
@@ -919,7 +914,7 @@ footer .footer__bottom p {
     justify-content: center;
   }
 
-  .technical__data--close {
+  .technical__data--close{
     right: 20px;
   }
 }
